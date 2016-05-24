@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aria - P&P RPG</title>
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body><div class="container"><p>Table of contents</p>
 
@@ -226,13 +226,11 @@
 
 <p>A standard attack or spell takes three (3) AP, every defensive action also takes three (3) AP. In time you will regenerate these action points. You cannot get below zero (0) action points. Because Aria is a fluent game system, meaning that it does not have rounds and turns, your AP will decrease and increase during the course of a combat. Deciding when to attack and when not to is really important. If your character reaches zero (0) AP you can’t move faster than a slow walk and you cannot fight because you are incredibly fatigued. </p>
 
-<p>A second thing you can do with AP is modify your DMG taken or DMG done. Two AP can increase or decrease your DMG by one (1). </p>
+<p>A second thing you can do with AP is modify your DMG taken after a failed defensive action or increase your DMG done. One AP can increase or decrease your DMG by one (1). </p>
 
 <p>The last thing you can do with AP are Power Stunts (PS) and Feats of Strength (FoS). Every character will get standard FoS like Climbing a steep wall or sprinting; depending on the duration of the Feat the GM will decide how many AP are needed. A rule of thumb is that sprinting one hundred (100) meters costs eight (8) AP. During the time of the FoS or PS you will not regenerate AP. </p>
 
 <p>Power Stunts are special abilities which take AP to trigger or maintain. For example Sixth Sense will alert you when you are the target of an unforeseen damaging action. Every time this ability triggers it will cost you three (3) AP. This is an example of a passive power. There are also active powers, for example, Warriors can choose the Power: Whirlwind which will automatically perform the attack you did on another target as well. Each target you choose to attack will cost you three (3) AP.</p>
-
-
 
 <h2 id="initiative">Initiative</h2>
 
@@ -258,21 +256,17 @@
 
 <h2 id="magic">Magic</h2>
 
-<p>Magic is the ability to change reality with your mental power and some arcane knowledge. Magic in Aria is very straight forward, when you choose a magical profession you get a magic skill and a lore skill. Every 5 XP you put into the magic or lore skill will grant you one spell point which you can spend on spells. You can either upgrade a spell or buy a new one if your lore is equal or higher than the lore needed to buy the spell.</p>
+<p>Magic is the ability to change reality with your mental power and some arcane knowledge. Magic in Aria is very straight forward, when you choose a magical profession you get a magic skill and a lore skill. Every 5 XP you put into the magic or lore skill will grant you one spell point which you can spend on spells with every rank has to be 10 lore level higher. You can either upgrade a spell or buy a new one if your lore is equal or higher than the lore needed to buy the spell.</p>
 
 <p>For example:</p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-5">
+<p><script type="math/tex; mode=display" id="MathJax-Element-504">
 Fireball: 20 INI,  \; 2d6 + 2 \; DMG
 </script></p>
 
-<p>You can cast this Fireball which takes 21 IP to cast and costs 3 AP, every action costs 3 AP. Your magic skill is 12. You roll 1d20 + 12 against the dodge of the target. </p>
+<p>You can cast this Fireball which takes 20 IP to cast and costs 3 AP, every action costs 3 AP. Your magic skill is 12. You roll 1d20 + 12 against the dodge of the target. </p>
 
 <p>Magic gives a bit more flexibility within a combat. You can decide to <em>double your cast</em> effectively taking twice as long and costing twice the amount of AP, giving your spell a dmg modifier of <em>times 2</em>. So in the previous fireball example you can say:</p>
-
-
 
 <p><script type="math/tex; mode=display" id="MathJax-Element-6">
 Fireball: 6 AP, \; 40 IP,  \; (2d6 + 2) * 2 \; DMG
@@ -288,37 +282,34 @@ Fireball: 6 AP, \; 40 IP,  \; (2d6 + 2) * 2 \; DMG
 
 <p>Offensive spells either do DMG or hinder a target. For example, the spell Slow increases recuperation or preparation times. The spell Fireball does DMG to a target’s HP. Not every spell can be resisted with a skill. Fireball can be resisted with Dodge but Slow can only be resisted by counter spelling or casting Haste. </p>
 
-<p>Each DMG dealing spell does about equal DMG to a physical weapon. Magic missiles are set to the DMG of daggers and Fireball to that of a two handed axe. This is important because this will define the balance between magic and melee. </p>
+<p>Every default Offensive spell which does DMG is modeled after a weapon so when creating spells you can choose the DMG from the weapon’s table. The Cooldown of the spell will be like the Initiative of the weapon. For example: Magic missiles are set to the DMG of daggers while Fireball is set to that of a two handed axe. Maintaining this balance between melee and magic is important.</p>
+
+<p>Every offensive spell which a drain or a leach will by default do: 1 + 1 per rank of the effect per recuperation so every 30 IP. For example, Drain Life, the priest spell, does -1 HP per 30 IN. Each rank you put into this spell will increase that with 1. So at lore level 32 I can buy rank 4 or the spell and so -5 HP per 30 IN.</p>
 
 <p>With spells you cannot modify the DMG of the spell with action points the way you can with a melee attack. </p>
 
 <p>Offensive spells have a base range of 15 meters (unless stated otherwise). Each rank increases this range with 5 meters. Each offensive spell can get an extra target per every other rank. So rank 1, one target, rank 3 two targets, rank 5 three targets. For example a rank 5 fireball can shoot at three targets. If you shoot these three fireballs at one person and he does not dodge he gets 3 times the impact and you roll three times for DMG. </p>
 
-<p>Each rank of a spell can increase the DMG but will automatically increase the IM or it can lower the IM.  </p>
-
-
+<p>Unless stated otherwise each rank of an offensive spell can increase the DMG with 1 of the die plus 1 but will automatically increase the IM with 10 or a rank can lower the IM with 10 with a minimum of 15. So the fireball in the example can get +1d6 + 1 but will have the Cooldown increased with 10; or the Cooldown can be reduced with 10. </p>
 
 <h3 id="use-the-source">Use the Source!</h3>
 
-<p>When a magic user equips a <em>Source</em> he or she can cast bolts called Magic Missiles which do the DMG of a Dagger (3d4). A better source equals more DMG just like a weapon does. A source counts as an offhand weapon.</p>
-
-
+<p>When mages learn their craft they create an item, called a <em>Source</em>. When a magic user equips a <em>Source</em> he or she can cast bolts called Magic Missiles which do the DMG of a Dagger 3d4 + (1d4 per lvl). A source counts as an offhand weapon.</p>
 
 <h3 id="defensive-spells-protection">Defensive Spells &amp; Protection</h3>
 
 <p>Defensive spells counter certain elements of the game. For example a shield increases armor. Wards are static spells which protect an area against certain other spells. For example, a caster can erect a ward against Fire reducing Fire DMG taking within the area.</p>
 
+<p>Unless stated otherwise a defensive spell works like: <br>
+Every rank grants a +1 to the effect of the spell. The duration of the spell is increased by 5 Initiative and you can cast the spell on 1 other target for +1AP. So at rank 1 you can cast Stone Skin on 2 targets for (3 + 1)AP.</p>
+
 <p>Every caster gets the following armor spell:</p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-10">
+<p><script type="math/tex; mode=display" id="MathJax-Element-511">
 Armor: 3AP, \; 10 IP, Grants \; your \; PHY \; as \; armor  \; from \; PHY \; attacks.
 </script></p>
 
-<p>Every caster automatically gets <script type="math/tex" id="MathJax-Element-11">INU</script> as a resistance to magic. You can see this as pure magical resistance. For instance, a fireball does <script type="math/tex" id="MathJax-Element-12">20 \; DMG</script>, your <script type="math/tex" id="MathJax-Element-13">INU</script> is <script type="math/tex" id="MathJax-Element-14">7</script>, you lose <script type="math/tex" id="MathJax-Element-15">13 \; HP</script>. </p>
-
-
+<p>Every caster automatically gets <script type="math/tex" id="MathJax-Element-512">INU</script> as a resistance to magic. You can see this as pure magical resistance. For instance, a fireball does <script type="math/tex" id="MathJax-Element-513">20 \; DMG</script>, your <script type="math/tex" id="MathJax-Element-514">INU</script> is <script type="math/tex" id="MathJax-Element-515">7</script>, you lose <script type="math/tex" id="MathJax-Element-516">13 \; HP</script>. </p>
 
 <h3 id="utility">Utility</h3>
 
@@ -766,7 +757,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Heat</td>
-  <td>Warm something up, water can boil, wood can ignore, iron can melt but this takes a long time. Heat is the basic spell for the fire wizard.</td>
+  <td>Warm something up, water can boil, wood can ignite, iron can melt but this takes a long time. Heat is the basic spell for the fire wizard.</td>
 </tr>
 <tr>
   <td>10</td>
@@ -776,7 +767,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>10</td>
   <td>Jet of Flame</td>
-  <td>DMG: 1d4 + 1 DMG per 5 IP. Channeled spell costs 3 AP per 30 IP. Can’t recuperate whilst channeling.</td>
+  <td>DMG: <script type="math/tex" id="MathJax-Element-600">1d4</script> DMG per 5 IP. Channeled spell costs 3 AP per 30 IP. Can’t recuperate whilst channeling.</td>
 </tr>
 <tr>
   <td>10</td>
@@ -786,22 +777,22 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>20</td>
   <td>Flaming Sphere</td>
-  <td>Roll a Sphere in a direction. <script type="math/tex" id="MathJax-Element-17">2d12 + 5</script> DMG. Moves 1 m per 10 IP does not take a Dodge roll to dodge, does not explode on impact.</td>
+  <td>Roll a Sphere in a direction. <script type="math/tex" id="MathJax-Element-601">2d12 + 5</script> DMG. Moves 1 m per 10 IP does not take a Dodge roll to dodge, does not explode on impact.</td>
 </tr>
 <tr>
   <td>30</td>
   <td>Flaming Aura</td>
-  <td>Whenever someone attacks you they receive <script type="math/tex" id="MathJax-Element-18">1d4</script> DMG, armor does not count.</td>
+  <td>Whenever someone attacks you they receive <script type="math/tex" id="MathJax-Element-602">1d4</script> DMG does not matter if they score a hit or if you parry, armor does not count. DMG does not count when you dodge.</td>
 </tr>
 <tr>
   <td>30</td>
   <td>Flaming Weapon</td>
-  <td>Weapon does and extra <script type="math/tex" id="MathJax-Element-19">1d6 + 1</script> Fire DMG.</td>
+  <td>Weapon does and extra <script type="math/tex" id="MathJax-Element-603">1d4</script> Fire DMG, armor does not count.</td>
 </tr>
 <tr>
   <td>40</td>
   <td>Flame Strike</td>
-  <td><script type="math/tex" id="MathJax-Element-20">INU \; m^{2}</script> gets 1d6 + 1 DMG, armor does not count. Horses flee, cattle runs and normal soldiers break up. This spell does not outright kill, but leaves a lasting effect on the targets.</td>
+  <td><script type="math/tex" id="MathJax-Element-604">INU \; m^{2}</script> gets 1d6 + 1 DMG, armor does not count. Horses flee, cattle runs and normal soldiers break up. This spell does not outright kill, but leaves a lasting effect on the targets.</td>
 </tr>
 <tr>
   <td>50</td>
@@ -809,8 +800,6 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Summon a fire elemental which will do your bidding as long as he’s summoned.</td>
 </tr>
 </tbody></table>
-
-
 
 
 <h4 id="earth-spells">Earth spells</h4>
@@ -841,7 +830,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>10</td>
   <td>Sink</td>
-  <td>Recuperate -1 AP when in the affected area. Can only walk, not run. Must remain walking to not die in a lot of rounds.</td>
+  <td>Recuperate -1 AP when in the affected area. Can only walk, not run. Must remain walking to not die after a lot of rounds.</td>
 </tr>
 <tr>
   <td>20</td>
@@ -854,8 +843,6 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Recuperate -1 AP. Initiative of weapons + 10. Can not move from the spot. Can not be cast in conjunction with Sink.</td>
 </tr>
 </tbody></table>
-
-
 
 
 <h4 id="water-spells">Water spells</h4>
@@ -931,7 +918,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Hide</td>
-  <td>Get a +5 to your hide roll.</td>
+  <td>Get a +5 to your hide roll. Per rank +10 to hide. At rank 5 you count as invisible. Enemies can only parry or attack with alertness. Their actions are rolled on Alertness (or PER + 1d10) instead of their weapon skill. Hide drops after an attack.</td>
 </tr>
 <tr>
   <td>1</td>
@@ -941,7 +928,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>10</td>
   <td>Sonic boom</td>
-  <td>Do 1d2 DMG, armor does not count. People caught in the Sonic Boom get a -5 to everything they do for 60 IP.</td>
+  <td>Do 1d2 DMG, armor does not count. People caught in a Sonic Boom get a -5 to everything they do for 60 IP.</td>
 </tr>
 <tr>
   <td>10</td>
@@ -951,7 +938,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>10</td>
   <td>Air walking</td>
-  <td>Can now move through the air at walking speed, 100 IP.</td>
+  <td>Can now move through the air at walking speed 5m per 30 IP. Each level increases the speed level, doubling the distance per 30 IP. So, { walking, 5m }, { jogging: 10m }, { running, 20m } and { sprinting, 40m } per 30 IP.</td>
 </tr>
 <tr>
   <td>20</td>
@@ -964,8 +951,6 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Target dies in 300 IP.</td>
 </tr>
 </tbody></table>
-
-
 
 
 <h3 id="priests">Priests</h3>
@@ -1034,7 +1019,7 @@ Counter Spell: 5 AP, \; 10 IP
 <ul>
 <li>Regenerate: 1 life per recuperation.  (+1 per level)</li>
 <li>Protect: +2 armor (+1 per level)</li>
-<li>Destroy evil: +2 DMG against undead and demons. </li>
+<li>Destroy evil: +2 DMG against undead and demons.  This spell is always on. If you even “shake the hand of an undead” you will deal 2 DMG and will know it’s a demon.</li>
 </ul>
 
 <table>
@@ -1050,7 +1035,7 @@ Counter Spell: 5 AP, \; 10 IP
   <td>1</td>
   <td>Heal for 5 HP, cast 50 IP, must touch the target</td>
   <td>+2 armor</td>
-  <td>+4 DMG against undead and demons. +2 DMG against other opponents.</td>
+  <td>+4 DMG against undead and demons. +2 DMG against other opponents. Duration <script type="math/tex" id="MathJax-Element-503">60 + (10 * lvl)</script> Initiative.</td>
 </tr>
 <tr>
   <td>2</td>
@@ -1092,7 +1077,7 @@ Counter Spell: 5 AP, \; 10 IP
 <p><img src="http://i38.servimg.com/u/f38/16/20/57/73/hitosh10.jpg" alt="" title=""> <br>
 <!--  --></p>
 
-<p>A Rogue is different compared to the other classes and begin with almost all of their powers. Every level a Rogue gets he or she can upgrade a power. A Rogue can not choose a Special Ability but has to choose Hide in Plain sight.</p>
+<p>A Rogue is different compared to the other classes and begins with almost all of their powers. These powers grow stronger with every level. A Rogue can not choose a Special Ability but has to choose Hide in Plain sight.</p>
 
 <table>
 <thead>
@@ -1105,32 +1090,32 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Expose Armor</td>
-  <td>Attack doing no DMG but reducing the armor of the target by 2.</td>
+  <td>Attack doing no DMG but reducing the  physical armor of the target by <script type="math/tex" id="MathJax-Element-493">(2 + lvl)</script> for all enemies attacking that target. Does not work against magical armor like a mage aura or a stone skin.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Vanish</td>
-  <td>Hide in plain sight during combat. Cost 5 AP, cannot attack or do other things. Can vanish in a circle of AGI meter.</td>
+  <td>Hide by walking into the Shadow Realm and emerge hidden. You step through the Shadow Realm and emerge <script type="math/tex" id="MathJax-Element-494">(AGI + lvl) \; meters</script> in max lvl Initiative points. This means that the higher level you are, the longer you can stay hidden in the Shadow Realm. You emerge hidden. Cost 5 AP, cannot attack or do other things whist hidden. 0 INI but a cooldown of 1000 INI. You can take <script type="math/tex" id="MathJax-Element-495">(lvl)</script> targets, with a maximum of 3, with you.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Interrupt</td>
-  <td>The action the target was about to do gets a +10 IP, cost 3 AP.</td>
+  <td>The action the target was about to do gets a <script type="math/tex" id="MathJax-Element-496">(10 + lvl) \; IP</script>, cost 3 AP.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Recuperate</td>
-  <td>Leach 1 AP from the target and give yourself these AP with 1AP per 10 IP. Each AP you spend leaches 1 AP from the target with a max of 2 AP per level. Needs a successful hit and must be called in advance.</td>
+  <td>Drain AP from the target and give yourself a fraction of these AP with per 10 IP as a bonus. Each AP you spend leaches 1 AP from the target with a max <script type="math/tex" id="MathJax-Element-497">(2 * lvl + 2)</script>. Needs a successful hit and must be called in advance.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Directed Strike</td>
-  <td>Directed strike lowers the target’s PV with 25% on a successful hit. Costs 3AP.</td>
+  <td>Directed strike lowers the target’s PV with <script type="math/tex" id="MathJax-Element-498">(25 + lvl</script>)% on a successful hit. Costs 3AP.</td>
 </tr>
 </tbody></table>
 
 
-
+<p>A rogue can only do his specials, except for Vanish, when he holds smaller, maneuverable weapons. An effective rogue therefor always uses daggers.</p>
 
 <h3 id="druids">Druids</h3>
 
@@ -1260,7 +1245,7 @@ Counter Spell: 5 AP, \; 10 IP
 
 
 
-<div class="sequence-diagram"><svg height="961" version="1.1" width="819.8515625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.25px; top: -0.53125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M6,1 1,3.5 6,6" id="raphael-marker-open" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endopen77-obj30" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj36" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj45" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj48" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endblock55-obj54" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="#000" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker></defs><rect x="10" y="20" width="46.6875" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="19.984375" y="30" width="26.6875" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="33.34375" y="38.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue</tspan></text><rect x="10" y="903.5" width="46.6875" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="19.984375" y="913.5" width="26.6875" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="33.34375" y="922.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue</tspan></text><path fill="none" stroke="#000000" d="M33.34375,57.5L33.34375,903.5" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="367.8359375" y="20" width="69.765625" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="377.828125" y="30" width="49.765625" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="402.71875" y="38.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent</tspan></text><rect x="367.8359375" y="903.5" width="69.765625" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="377.828125" y="913.5" width="49.765625" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="402.71875" y="922.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent</tspan></text><path fill="none" stroke="#000000" d="M402.71875,57.5L402.71875,903.5" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="175.5" y="73.75" width="85.03125" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="82.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack (8/17)</tspan></text><path fill="none" stroke="#000000" d="M33.34375,95C33.34375,95,371.4849809035659,95,400.7091009572432,95" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj30)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="53.34375" y="115" width="292.625" height="81.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="58.328125" y="120" width="282.625" height="71.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="199.65625" y="155.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-21.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">An attack is always denoted as (a/b) with </tspan><tspan dy="18" x="199.65625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">b the skill level and a the roll. </tspan><tspan dy="18" x="199.65625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">If for some reason there are modifiers you </tspan><tspan dy="18" x="199.65625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">denote them as (a/mod1/mod2/b)</tspan></text><rect x="152.984375" y="212.75" width="130.078125" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="221.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Defence (5/17 * 17)</tspan></text><path fill="none" stroke="#000000" d="M402.71875,234C402.71875,234,64.57751909643412,234,35.35339904275679,234" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj36)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="422.71875" y="254" width="285.140625" height="81.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="259" width="275.140625" height="71.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="565.2890625" y="294.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-21.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">A defensive action is always denoted as </tspan><tspan dy="18" x="565.2890625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">(a/b * attack) so in the case of vincent he </tspan><tspan dy="18" x="565.2890625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">rolled a 5 which resulted in a 17 and had </tspan><tspan dy="18" x="565.2890625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">to defend a 17.</tspan></text><rect x="53.34375" y="355.5" width="329.375" height="45.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="58.328125" y="360.5" width="319.375" height="35.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="378.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-3.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">A tie is always to the advantage of the defender.</tspan><tspan dy="18" x="218.03125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">If you cannot score a real hit it does not count.</tspan></text><rect x="171.328125" y="417.25" width="93.375" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="426" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack (12/24)</tspan></text><path fill="none" stroke="#000000" d="M402.71875,438.5C402.71875,438.5,64.57751909643412,438.5,35.35339904275679,438.5" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj45)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="148.8125" y="454.75" width="138.40625" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="463.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Defence (10/19 * 24)</tspan></text><path fill="none" stroke="#000000" d="M33.34375,476C33.34375,476,371.4849809035659,476,400.7091009572432,476" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj48)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="422.71875" y="496" width="267.375" height="45.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="501" width="257.375" height="35.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="556.40625" y="518.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-3.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent has scored a hit and may now </tspan><tspan dy="18" x="556.40625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">roll for DMG.</tspan></text><rect x="168.421875" y="557.75" width="99.1875" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="566.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">DMG (12/9/21)</tspan></text><path fill="none" stroke="#000000" d="M402.71875,579C402.71875,579,82.37014233507216,579,38.33785080300322,579" stroke-width="2" marker-end="url(#raphael-marker-endblock55-obj54)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="422.71875" y="599" width="312.25" height="117.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="604" width="302.25" height="107.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="578.84375" y="657.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-39.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">His weapon does 2d6+2 resulting in 12 DMG </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"> he pours in 9 AP, he goes all out as they say.</tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Resulting in an extra 9 DMG. </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue has 7 armor, get 21 DMG, </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">14 DMG  gets through and Sue leaves </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">the combat.</tspan></text><rect x="422.71875" y="736.5" width="248.828125" height="99.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="741.5" width="238.828125" height="89.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="547.1328125" y="786.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-30.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent had 14 AP. Het spend 3 </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">on a parry, 2 on an attack </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">and 8 on extra DMG. Vincent </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">now has 1 AP and can't even move </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">because of the fatigue.</tspan></text><rect x="422.71875" y="856" width="91.703125" height="27.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="861" width="81.703125" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="468.5703125" y="869.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">But he wins!</tspan></text></svg></div>
+<div class="sequence-diagram"><svg height="954" version="1.1" width="802.53125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M6,1 1,3.5 6,6" id="raphael-marker-open" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endopen77-obj30" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj36" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj45" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj48" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endblock55-obj54" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="#000" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker></defs><rect x="10" y="20" width="46" height="37" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="20" y="30" width="26" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="33" y="38.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue</tspan></text><rect x="10" y="897" width="46" height="37" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="20" y="907" width="26" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="33" y="915.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue</tspan></text><path fill="none" stroke="#000000" d="M33,57L33,897" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="358.8125" y="20" width="68.71875" height="37" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="368.796875" y="30" width="48.71875" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="393.171875" y="38.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent</tspan></text><rect x="358.8125" y="897" width="68.71875" height="37" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="368.796875" y="907" width="48.71875" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="393.171875" y="915.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent</tspan></text><path fill="none" stroke="#000000" d="M393.171875,57L393.171875,897" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="171.078125" y="73.5" width="84" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="213.0859375" y="82" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack (8/17)</tspan></text><path fill="none" stroke="#000000" d="M33,94C33,94,362.3798624901101,94,391.16843445579843,94" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj30)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="53" y="114" width="285" height="81" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="58" y="119" width="275" height="71" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="195.5" y="154.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-21.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">An attack is always denoted as (a/b) with </tspan><tspan dy="18" x="195.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">b the skill level and a the roll. </tspan><tspan dy="18" x="195.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">If for some reason there are modifiers you </tspan><tspan dy="18" x="195.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">denote them as (a/mod1/mod2/b)</tspan></text><rect x="149.578125" y="211.5" width="127" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="213.0859375" y="220" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Defence (5/17 * 17)</tspan></text><path fill="none" stroke="#000000" d="M393.171875,232C393.171875,232,63.7920125098899,232,35.00344054420157,232" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj36)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="413.171875" y="252" width="280" height="81" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="418.171875" y="257" width="270" height="71" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="553.171875" y="292.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-21.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">A defensive action is always denoted as </tspan><tspan dy="18" x="553.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">(a/b * attack) so in the case of vincent he </tspan><tspan dy="18" x="553.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">rolled a 5 which resulted in a 17 and had </tspan><tspan dy="18" x="553.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">to defend a 17.</tspan></text><rect x="53" y="353" width="320.171875" height="45" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="57.984375" y="358" width="310.171875" height="35" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="213.0859375" y="375.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">A tie is always to the advantage of the defender.</tspan><tspan dy="18" x="213.0859375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">If you cannot score a real hit it does not count.</tspan></text><rect x="167.078125" y="414.5" width="92" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="213.0859375" y="423" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack (12/24)</tspan></text><path fill="none" stroke="#000000" d="M393.171875,435C393.171875,435,63.7920125098899,435,35.00344054420157,435" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj45)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="145.578125" y="451.5" width="135" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="213.0859375" y="460" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Defence (10/19 * 24)</tspan></text><path fill="none" stroke="#000000" d="M33,472C33,472,362.3798624901101,472,391.16843445579843,472" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj48)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="413.171875" y="492" width="261.71875" height="45" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="418.15625" y="497" width="251.71875" height="35" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="544.03125" y="514.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent has scored a hit and may now </tspan><tspan dy="18" x="544.03125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">roll for DMG.</tspan></text><rect x="164.578125" y="553.5" width="97" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="213.0859375" y="562" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">DMG (12/9/21)</tspan></text><path fill="none" stroke="#000000" d="M393.171875,574C393.171875,574,81.45965173398145,574,38.00562842223911,574" stroke-width="2" marker-end="url(#raphael-marker-endblock55-obj54)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="413.171875" y="594" width="305" height="117" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="418.171875" y="599" width="295" height="107" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="565.671875" y="652.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-39.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">His weapon does 2d6+2 resulting in 12 DMG </tspan><tspan dy="18" x="565.671875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"> he pours in 9 AP, he goes all out as they say.</tspan><tspan dy="18" x="565.671875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Resulting in an extra 9 DMG. </tspan><tspan dy="18" x="565.671875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue has 7 armor, get 21 DMG, </tspan><tspan dy="18" x="565.671875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">14 DMG  gets through and Sue leaves </tspan><tspan dy="18" x="565.671875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">the combat.</tspan></text><rect x="413.171875" y="731" width="244" height="99" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="418.171875" y="736" width="234" height="89" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="535.171875" y="780.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-30.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent had 14 AP. Het spend 3 </tspan><tspan dy="18" x="535.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">on a parry, 2 on an attack </tspan><tspan dy="18" x="535.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">and 8 on extra DMG. Vincent </tspan><tspan dy="18" x="535.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">now has 1 AP and can't even move </tspan><tspan dy="18" x="535.171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">because of the fatigue.</tspan></text><rect x="413.171875" y="850" width="90" height="27" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="418.171875" y="855" width="80" height="17" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="458.171875" y="863.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">But he wins!</tspan></text></svg></div>
 
 
 
