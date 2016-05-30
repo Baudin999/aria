@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body><div class="container"><h1 id="architecture">Architecture</h1>
+
+<p>This document is written in order to give a basic architecture for the scope4mation client application. The goal of the client application (we don’t have a temporary name for this project yet) is to reenvision all of the client application which exist right now and merge them into one modular, maintainable client application.</p>
+
+
+
+<h2 id="the-current-applications">The current applications</h2>
+
+<p>The current landscape of applications is quite large:</p>
+
+<ul>
+<li><strong>ETL</strong>: Extract Transform and Load. Get data, change data, store data.</li>
+<li><strong>ESB</strong>: A workflow engine.</li>
+<li><strong>DM</strong>: Data Manager</li>
+<li><strong>DMP</strong>: Data Manager Portal</li>
+<li><strong>Generic WebServices</strong>: Configure web services of different types so that we can pull or send data from these services.</li>
+<li><strong>BDA</strong>: Big Data Anonymizer</li>
+<li><strong>ACC</strong>:  Application Control Center.</li>
+</ul>
+
+<p>All of these applications serve  a singular purpose but these purposes are all intertwined. The goal of the new client application is to create a single application.</p>
+
+
+
+<h3 id="dmp">DMP</h3>
+
+<p><img src="http://www.scope4mation.com/docs/files/2013/12/DMP-Overview-3.png" alt="" title=""></p>
+
+<h2 id="proposition">Proposition</h2>
+
+<p>Before looking at implementation it might be a good idea to talk about a few definitions. The following image shows the basic terms in a diagram. </p>
+
+<p><img src="https://lh3.googleusercontent.com/-sdpM9IAP-Bg/V0vzoCASBpI/AAAAAAAAABM/NWWwyGkHSvI1W4G6ybc47JZFvrYcowbGwCLcB/s0/Architecture.png" alt="enter image description here" title="Architecture_001_30052016.png"></p>
+
+<p>There should be a definite boundary between the Frontend Application and the backend application. The client should never directly communicate with the Back End. There shouldn’t even be enough information on the client or in the traffic between the client and the frontend server to discern anything about the backend. </p>
+
+<p>For all intents and purposes we will assume that the Frontend Server is a secure environment. We have not yet decided how the security is going to work. My personal preference is to generate an SSH-Key for each client and supplying the public part to one or multiple Frontend Servers to establish a secure connection and to authenticate the user. </p>
+
+<p>All of these application will be replaced by the following applications:</p>
+
+<ul>
+<li><strong>A client</strong>: The Front End application, the FE application is installed locally on the computer of a user.</li>
+<li><strong>An aggregate server</strong>: A single server with which the client can communicate. The aggregate server is installed on premise. The aggregate server is the only server which is allowed to communicate with the backend. </li>
+<li><strong>A database</strong>: We will need to store information in a database, usage, configuration and aggregation. Partial data transformations and small snippets.</li>
+<li><strong>A version server</strong>: A single server, installed on a server maintained by us <em>or</em> installed on premise. This server can supply a new version of the client. </li>
+</ul>
+
+<h2 id="requirements">Requirements</h2>
+
+<blockquote>
+  <p><strong>Wikipedia:</strong> In product development and process optimization, a requirement is a singular documented physical and functional need that a particular design, product or process must be able to perform. It is most commonly used in a formal sense in systems engineering, software engineering, or enterprise engineering. It is a statement that identifies a necessary attribute, capability, characteristic, or quality of a system for it to have value and utility to a customer, organization, internal user, or other stakeholder. A requirement specification (often imprecisely referred to as the spec, because there are different sorts of specifications) refers to an explicit set of requirements to be satisfied by a material, design, product, or service. <br>
+  <a href="https://en.wikipedia.org/wiki/Requirement">wikipedia</a></p>
+</blockquote>
+
+<p>Getting all the requirements for a list of application which have been used and build for years is a seemingly impossible task. This is not to say that it should not be undergone. With this application we need the architecture to be as solid as possible and we will need the development process to the exceptional and smooth, in other words, we’ll need an environment where we can build small increments and deploy them almost on the fly. This brings us to the meta set of functional requirements which govern the workings of the application.</p>
+
+
+
+<h3 id="evergreen-application">Evergreen application</h3>
+
+<p>It is important that the application can <em>maintain itself</em>. In order to build something like this we’ll need a <em>shell application</em> which can serve the content from a server and the templates from a versioned folder in the file system. </p>
+
+<p>The initial idea was to build a web application but we are investigation the option of building a custom client based on <a href="http://electron.atom.io/">electron</a> which can serve as a shell for the client application. The pro’s and cons of these approaches are obvious but I will state them anyway:</p>
+
+<p>Web Application:</p>
+
+<ul>
+<li>(Pro) Simple to access for users</li>
+<li>(Pro) Single installment, can even run on premise</li>
+<li>(Con) Browser-hell</li>
+<li>(Con) not so easy to allow 3e party plugins</li>
+<li>(Con) Expectations of browser applications  <br>
+<ul><li>Responsiveness</li>
+<li>Mobile devices</li>
+<li>Accessibility</li></ul></li>
+</ul>
+
+<p>Electron:</p>
+
+<ul>
+<li>(Pro) Single browser which renders the application</li>
+<li>(Pro) Full access to file system</li>
+<li>(Pro) Possible to allow 3e party plugins</li>
+<li>(Pro) No expectations concerning web standards</li>
+<li>(Con) Users need to install the application</li>
+<li>(Con) No easy mobile version</li>
+</ul>
+
+<p>I believe that the electron version is better suited to contain the requirements we need. We can set up a server which can deploy new versions of the modules and we can even allow users of the application to update <em>when they want to</em>. This last part does not seem that important, but it immediately allows you to create a “beta program” which might be hugely beneficial.  </p>
+
+
+
+<h3 id="modular">Modular</h3>
+
+<p>Every functional part should be a module and every module should have components which can be rendered and configured. These modules should contain manifests and configurations, versions and compartments. To state it simply, a module is a small self sustaining part of the application.</p>
+
+
+
+<h3 id="testing">Testing</h3>
+
+<p>As far as I can discern there is an internal testing tool which can test web applications and sites. We need to see how this tool tests our modules. </p>
+
+
+
+<h3 id="logging">Logging</h3>
+
+<p>We will need to log actions and share these usage logs with scope4mation. I suggest building an extensive logging system in the application. Every action, from now on referred to as a command, should be logged. This gives us insight in the usage- and will help us maintain and extend the application. </p>
+
+<p>Logging should be done in three steps:</p>
+
+<ul>
+<li><strong>Log Command</strong>: A command is an action within the application. Commands either change the state of data or change the state of the application. </li>
+<li><strong>Log Exceptions</strong>: An exception is a state of the application which was not anticipated and which breaks the current stack. An exception breaks the flow of the application. By this definition an exception can never be something like <em>the validation of a model</em>.</li>
+<li><strong>Log Durations</strong>: We will want to find out which parts of the application are heavily used and which parts are performance bottlenecks. I want to log every request to the server and every transaction on the client.</li>
+</ul></div></body>
+</html>
