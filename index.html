@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aria - P&P RPG</title>
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body><div class="container"><p>Table of contents</p>
 
@@ -26,6 +26,10 @@
 <li><a href="#counter-spelling">Counter Spelling</a></li>
 </ul>
 </li>
+<li><a href="#features-feats">Features (feats)</a><ul>
+<li><a href="#directed-strike">Directed Strike</a></li>
+</ul>
+</li>
 <li><a href="#powers">Powers</a><ul>
 <li><a href="#spells">Spells</a></li>
 <li><a href="#blessings">Blessings</a></li>
@@ -35,9 +39,13 @@
 <li><a href="#races">Races</a></li>
 <li><a href="#professions">Professions</a><ul>
 <li><a href="#dual-class">Dual Class</a></li>
-<li><a href="#warriors">Warriors</a></li>
+<li><a href="#warriors">Warriors</a><ul>
+<li><a href="#skills-1">Skills</a></li>
+</ul>
+</li>
 <li><a href="#mages">Mages</a><ul>
 <li><a href="#description">Description</a></li>
+<li><a href="#skills-2">Skills</a></li>
 </ul>
 </li>
 <li><a href="#spells-1">Spells</a><ul>
@@ -48,11 +56,21 @@
 </ul>
 </li>
 <li><a href="#priests">Priests</a><ul>
-<li><a href="#holy">Holy</a></li>
-<li><a href="#paladin">Paladin</a></li>
+<li><a href="#holy">Holy</a><ul>
+<li><a href="#skills-3">Skills</a></li>
 </ul>
 </li>
-<li><a href="#rogues">Rogues</a></li>
+<li><a href="#paladin">Paladin</a><ul>
+<li><a href="#skills-4">Skills</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#rogues">Rogues</a><ul>
+<li><a href="#subtlety">Subtlety</a></li>
+<li><a href="#combat">Combat</a></li>
+</ul>
+</li>
 <li><a href="#druids">Druids</a></li>
 </ul>
 </li>
@@ -62,11 +80,18 @@
 <li><a href="#skinwalker">Skinwalker</a></li>
 </ul>
 </li>
-<li><a href="#combat">Combat</a></li>
+<li><a href="#combat-1">Combat</a></li>
 <li><a href="#gear">Gear</a><ul>
 <li><a href="#melee-weapons">Melee Weapons</a></li>
 <li><a href="#shields">Shields</a></li>
-<li><a href="#armor">Armor</a></li>
+<li><a href="#armor">Armor</a><ul>
+<li><a href="#leather">Leather:</a></li>
+<li><a href="#brigandine">Brigandine:</a></li>
+<li><a href="#cloat-of-plates">Cloat of Plates</a></li>
+<li><a href="#splint">Splint</a></li>
+<li><a href="#plate">Plate</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -87,7 +112,7 @@
 
 <h1 id="xp-and-levels">XP and Levels</h1>
 
-<p>Experience is quantifiable in Aria by a point system called Experience Points (XP). XP can be used to increase your proficiency at something, usually a skill. Or at level five you can learn dual specialisation for ten XP. You earn experience points by surviving missions or training. </p>
+<p>Experience is quantifiable in Aria by a point system called Experience Points (XP). XP can be used to increase your proficiency at something, usually a skill. Or at level five you can learn dual specialization for ten XP. You earn experience points by surviving missions or training. </p>
 
 <p>Experience accumulates into moments of understanding which are called levels. I like to think of levels as having had an “Ah ha!” moment. The following structure shows how you increase your level:</p>
 
@@ -167,6 +192,31 @@
   <p>Side Note: When you compare XP in Aria to XP in Avalon you can compare about 10xp in Avalon with 1xp in Aria. To give you an idea, for level 10 we’ll need 155xp in Aria and about 1500xp in Avalon.</p>
 </blockquote>
 
+<p>When you select a class you get a skill set. For each of the skills in your skill set you roll 1d10 to measure your success at what you try to do with that skill. For example, a Warrior gets the following skills: A Weapon skill, Dodge and a Ballistic skill. These skills fall into his Primary Skill set category. When you reach level 2 you get an additional d10 roll; so now you roll 2d10. More generally you roll (lvl +1)d10 to measure success.</p>
+
+<p>With the XP you earn from missions you can do three things:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Increase the XP of your skill set. For each XP you are allowed to modify a roll with level amount.</td>
+</tr>
+<tr>
+  <td>Increase your feats.</td>
+</tr>
+<tr>
+  <td>Buy a new skill set for 10 XP</td>
+</tr>
+<tr>
+  <td>Buy spells and new levels in spells</td>
+</tr>
+</tbody></table>
+
+
 
 
 <h1 id="statististics">Statististics</h1>
@@ -206,7 +256,7 @@
 
 <p>Every character starts with every statistic at 1. Your racial package and professional package result in a few extra points which are pre determined. When you start a character you get 2 statistic points you can assign randomly.</p>
 
-<p>Every level grants you 2 statistic points you can assign randomly.</p>
+<p>Every level grants you 2 statistic points you can assign randomly. </p>
 
 
 
@@ -349,6 +399,130 @@ Counter Spell: 5 AP, \; 10 IP
 
 
 
+<h2 id="features-feats">Features (feats)</h2>
+
+<p>Every character starts with the following features you can increase. These features are only available for skills in your skill sets:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th align="center">Max Ranks</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Crit chance</td>
+  <td align="center">-</td>
+  <td>Increase your crit chance with 2,5% per rank; fractions rounded down.</td>
+</tr>
+<tr>
+  <td>Crit damage</td>
+  <td align="center">-</td>
+  <td>Increase your crit dmg with 1d4</td>
+</tr>
+<tr>
+  <td>Damage Adjustment</td>
+  <td align="center">-</td>
+  <td>Increase your dmg with 1</td>
+</tr>
+<tr>
+  <td>Armor Specialization</td>
+  <td align="center">-</td>
+  <td>Increase your armor with 1</td>
+</tr>
+<tr>
+  <td>Specialized offense</td>
+  <td align="center">-</td>
+  <td>6% chance to refund an AP after an offensive action</td>
+</tr>
+<tr>
+  <td>Specialized Defense</td>
+  <td align="center">-</td>
+  <td>6% chance to refund an AP after a defensive action</td>
+</tr>
+<tr>
+  <td>Recuperate</td>
+  <td align="center">-</td>
+  <td>10% chance to recuperate 1 extra AP while recuperating</td>
+</tr>
+<tr>
+  <td>Directed Strike</td>
+  <td align="center">-</td>
+  <td>You can call hit location at an increasing accuracy. See Directed Strike.</td>
+</tr>
+<tr>
+  <td>Resist Magic</td>
+  <td align="center">-</td>
+  <td>Magic does 1 less DMG</td>
+</tr>
+<tr>
+  <td>Splash</td>
+  <td align="center">-</td>
+  <td>5% chance to hit an additional target for 20% of your dmg.</td>
+</tr>
+<tr>
+  <td>Roll Modifier</td>
+  <td align="center">-</td>
+  <td>Per rank your XP in a skill counts as rank * XP</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="directed-strike">Directed Strike</h3>
+
+<p>You can call hit locations in combat. Costs 1 extra action point.</p>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Rank</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">1</td>
+  <td>You can call large areas: Legs, Torso or Arms at the cost of 1d10 to hit.</td>
+</tr>
+<tr>
+  <td align="center">2</td>
+  <td>Get +1d4 DMG when you hit</td>
+</tr>
+<tr>
+  <td align="center">3</td>
+  <td>After calling a location get +10% crit chance</td>
+</tr>
+<tr>
+  <td align="center">4</td>
+  <td>You can call smaller areas: Head, Chest, Abdomen, upper/lower arms or legs. at the cost of another 1d10 hit die.</td>
+</tr>
+<tr>
+  <td align="center">5</td>
+  <td>Get an extra 1d4 DMG when you hit</td>
+</tr>
+<tr>
+  <td align="center">6</td>
+  <td>After calling a location get an extra +10% crit chance.</td>
+</tr>
+<tr>
+  <td align="center">7</td>
+  <td>You can call even smaller areas: Eyes, throat, feet, knees etc. at the cost of another 1d10 hit die.</td>
+</tr>
+<tr>
+  <td align="center">8</td>
+  <td>Get an extra 1d4 DMG when you hit</td>
+</tr>
+<tr>
+  <td align="center">9</td>
+  <td>After calling a location get an extra +20% crit chance.</td>
+</tr>
+</tbody></table>
+
+
+
+
 <h2 id="powers">Powers</h2>
 
 <p>A power is something which makes your character different, it is an innate ability or something you can actively turn off and on again. At the beginning of your career you can choose one Power from either the spells section, the blessings section or the Special Abilities section, you can also use a Power to become an adept at a profession lowering the level needed for either the path or the discipline with one.</p>
@@ -441,6 +615,10 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td align="left">Hide in plain sight</td>
   <td align="left">You can hide in plain sight. Rogues automatically pick this special. Costs 4 AP.</td>
+</tr>
+<tr>
+  <td align="left">Bulwark</td>
+  <td align="left">+2 armor</td>
 </tr>
 <tr>
   <td align="left">Blink</td>
@@ -653,9 +831,9 @@ Counter Spell: 5 AP, \; 10 IP
 </thead>
 <tbody><tr>
   <td align="center">1</td>
-  <td>*</td>
-  <td>*</td>
-  <td>*</td>
+  <td>Rage I: Every 10 HP you loose grants +1 DMG per attack</td>
+  <td>Last Stand: Every 5 HP you loose grants +1 skill</td>
+  <td>Ice Cold: Every 10 HP you loose grants +1 Armor.</td>
 </tr>
 <tr>
   <td align="center">2</td>
@@ -726,6 +904,44 @@ Counter Spell: 5 AP, \; 10 IP
 </tbody></table>
 
 
+<h4 id="skills-1">Skills</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Weapon skill (any type)</td>
+</tr>
+<tr>
+  <td>Dodge</td>
+</tr>
+<tr>
+  <td>Ballistic Skill</td>
+</tr>
+</tbody></table>
+
+
+<p>Path</p>
+
+<table>
+<thead>
+<tr>
+  <th>Barbarian</th>
+  <th>Soldier</th>
+  <th>Defender</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>2e weapon skill</td>
+  <td>Leadership</td>
+  <td>Guard</td>
+</tr>
+</tbody></table>
+
+
 
 
 <h3 id="mages">Mages</h3>
@@ -743,6 +959,31 @@ Counter Spell: 5 AP, \; 10 IP
 <p><img src="http://yuml.me/af937884" alt="" title=""></p>
 
 <!-- http://yuml.me/diagram/scruffy;dir:TB/class/edit/%2F%2F Cool Class Diagram, [Mage], [Mage]-[Elementalist], [Mage]-[Demonologist], [Mage]-[Illusionist] -->
+
+
+
+<h4 id="skills-2">Skills</h4>
+
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Magic Skill</td>
+</tr>
+<tr>
+  <td>Magic Lore</td>
+</tr>
+<tr>
+  <td>Ballistic Skill</td>
+</tr>
+<tr>
+  <td>Dodge</td>
+</tr>
+</tbody></table>
+
 
 
 
@@ -779,34 +1020,34 @@ Counter Spell: 5 AP, \; 10 IP
   <td>DMG: 4d8 + 4, Cooldown 25 IP, Hurls a fireball in the direction of the target.</td>
 </tr>
 <tr>
-  <td>10</td>
-  <td>Jet of Flame</td>
-  <td>DMG: <script type="math/tex" id="MathJax-Element-511">1d4</script> DMG per 5 IP. Channeled spell costs 3 AP per 30 IP. Can’t recuperate whilst channeling.</td>
-</tr>
-<tr>
-  <td>10</td>
+  <td>1</td>
   <td>Resist Fire</td>
   <td>Protect up to 12 DMG from Fire sources.</td>
 </tr>
 <tr>
+  <td>10</td>
+  <td>Jet of Flame</td>
+  <td>DMG: <script type="math/tex" id="MathJax-Element-17">1d4</script> DMG per 5 IP. Channeled spell costs 3 AP per 30 IP. Can’t recuperate whilst channeling.</td>
+</tr>
+<tr>
   <td>20</td>
   <td>Flaming Sphere</td>
-  <td>Roll a Sphere in a direction. <script type="math/tex" id="MathJax-Element-512">2d12 + 5</script> DMG. Moves 1 m per 10 IP does not take a Dodge roll to dodge, does not explode on impact.</td>
+  <td>Roll a Sphere in a direction. <script type="math/tex" id="MathJax-Element-18">2d12 + 5</script> DMG. Moves 1 m per 10 IP does not take a Dodge roll to dodge, does not explode on impact.</td>
 </tr>
 <tr>
   <td>30</td>
   <td>Flaming Aura</td>
-  <td>Whenever someone attacks you they receive <script type="math/tex" id="MathJax-Element-513">1d4</script> DMG does not matter if they score a hit or if you parry, armor does not count. DMG does not count when you dodge.</td>
+  <td>Whenever someone attacks you they receive <script type="math/tex" id="MathJax-Element-19">1d4</script> DMG does not matter if they score a hit or if you parry, armor does not count. DMG does not count when you dodge.</td>
 </tr>
 <tr>
   <td>30</td>
   <td>Flaming Weapon</td>
-  <td>Weapon does and extra <script type="math/tex" id="MathJax-Element-514">1d4</script> Fire DMG, armor does not count.</td>
+  <td>Weapon does and extra <script type="math/tex" id="MathJax-Element-20">1d4</script> Fire DMG, armor does not count.</td>
 </tr>
 <tr>
   <td>40</td>
   <td>Flame Strike</td>
-  <td><script type="math/tex" id="MathJax-Element-515">INU \; m^{2}</script> gets 1d6 + 1 DMG, armor does not count. Horses flee, cattle runs and normal soldiers break up. This spell does not outright kill, but leaves a lasting effect on the targets.</td>
+  <td><script type="math/tex" id="MathJax-Element-21">INU \; m^{2}</script> gets 1d6 + 1 DMG, armor does not count. Horses flee, cattle runs and normal soldiers break up. This spell does not outright kill, but leaves a lasting effect on the targets.</td>
 </tr>
 <tr>
   <td>50</td>
@@ -814,6 +1055,8 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Summon a fire elemental which will do your bidding as long as he’s summoned.</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h4 id="earth-spells">Earth spells</h4>
@@ -829,15 +1072,15 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Stoneskin</td>
-  <td>+2 PV</td>
+  <td>+2 Armor, each rank increases Armor by 1.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Strength of the Earth</td>
-  <td>PHY +1, DMG + 1. When the spell drops and you get below 0 HP you die.</td>
+  <td>PHY +1, DMG + 1. When the spell drops and you get below 0 HP the normal death rules activate. Each rank increases PHY and DMG by 1.</td>
 </tr>
 <tr>
-  <td>5</td>
+  <td>1</td>
   <td>Shatter Stone</td>
   <td>Break stone. In conjunction with DM to decide how long it takes and how much AP it costs.</td>
 </tr>
@@ -847,6 +1090,11 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Recuperate -1 AP when in the affected area. Can only walk, not run. Must remain walking to not die after a lot of rounds.</td>
 </tr>
 <tr>
+  <td>10</td>
+  <td>Weight of the earth</td>
+  <td>Weapons are slower (rank * 2 initiative)</td>
+</tr>
+<tr>
   <td>20</td>
   <td>Wall of Earth</td>
   <td>Raise a wall of max INU m wide and 3m high. Can be broken down but takes a few moments and a good weapon.</td>
@@ -854,11 +1102,14 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>30</td>
   <td>Grasping hands</td>
-  <td>Recuperate -1 AP. Initiative of weapons + 10. Can not move from the spot. Can not be cast in conjunction with Sink.</td>
+  <td>Recuperate -1 AP. Initiative of weapons + 4. Can not move from the spot. Can not be cast in conjunction with Sink.</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>Dig</td>
+  <td>You can dig tunnels and Caves. Your dig speed is ( INU / 10 )m + 1m per recuperation.</td>
 </tr>
 </tbody></table>
-
-
 
 
 <h4 id="water-spells">Water spells</h4>
@@ -1028,6 +1279,31 @@ Counter Spell: 5 AP, \; 10 IP
 
 
 
+<h5 id="skills-3">Skills</h5>
+
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Magic Skill</td>
+</tr>
+<tr>
+  <td>Magic Lore</td>
+</tr>
+<tr>
+  <td>Healing</td>
+</tr>
+<tr>
+  <td>Dodge</td>
+</tr>
+</tbody></table>
+
+
+
+
 <h4 id="paladin">Paladin</h4>
 
 <p>Paladins are holy warriors. They are specialized in the eradication of evil like demons and undead. There are three paths a paladin can follow and every level they gain they should choose one spell from that level. </p>
@@ -1035,8 +1311,8 @@ Counter Spell: 5 AP, \; 10 IP
 <p>Paladins start with three spells:</p>
 
 <ul>
-<li>Regenerate: 1 life per recuperation.  (+1 per level), this ability is always active.</li>
-<li>Protect: +2 armor (+1 per level), instant cast, lasts the duration of the combat. </li>
+<li>Regenerate: 1 life per recuperation.  (+1 per level), this ability is always active on the paladin. </li>
+<li>Protect: +1 armor, always on. </li>
 <li>Destroy evil: +2 DMG against undead and demons.  This spell is always on. If you even “shake the hand of an undead” you will deal 2 DMG and will know it’s a demon.</li>
 </ul>
 
@@ -1052,13 +1328,13 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Heal for 5 HP, cast 50 IP, must touch the target</td>
-  <td>+2 armor</td>
-  <td>+4 DMG against undead and demons. +2 DMG against other opponents. Duration <script type="math/tex" id="MathJax-Element-480">60 + (10 * lvl)</script> Initiative.</td>
+  <td>Bless: Gain +2 armor, replaces the +1 armor from the base spells of the paladin.</td>
+  <td>+4 DMG against undead and demons. +2 DMG against other opponents. Duration <script type="math/tex" id="MathJax-Element-641">60 + (10 * lvl)</script> Initiative.</td>
 </tr>
 <tr>
   <td>2</td>
   <td>Recovery +1 AP per recuperation</td>
-  <td>Share the pain: take 2 DMG another party member would have taken</td>
+  <td>Share the pain: You can use your action points to take DMG another party member would have taken. The max is lvl + 1 action points you can convert.</td>
   <td>Gain a +2 Weapon Skill when fighting undead or demons.</td>
 </tr>
 <tr>
@@ -1090,12 +1366,37 @@ Counter Spell: 5 AP, \; 10 IP
 
 <p>The next levels are all higher versions of the previous spells. The spells you’ve chosen will become more powerful, you are not allowed to change your choices.</p>
 
+<h5 id="skills-4">Skills</h5>
+
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Weapon Skill (pick one)</td>
+</tr>
+<tr>
+  <td>Dodge</td>
+</tr>
+<tr>
+  <td>Healing</td>
+</tr>
+<tr>
+  <td>Guard</td>
+</tr>
+</tbody></table>
+
+
+
+
 <h3 id="rogues">Rogues</h3>
 
 <p><img src="http://i38.servimg.com/u/f38/16/20/57/73/hitosh10.jpg" alt="" title=""> <br>
 <!--  --></p>
 
-<p>A Rogue is different compared to the other classes and begins with almost all of their powers. These powers grow stronger with every level. A Rogue can not choose a Special Ability but has to choose Hide in Plain sight.</p>
+<p>A Rogue is different compared to the other classes and begins with almost all of their powers. These powers grow stronger with every level. A Rogue can not choose a Special Ability but has to choose Hide in Plain sight. </p>
 
 <table>
 <thead>
@@ -1108,32 +1409,42 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Expose Armor</td>
-  <td>Attack doing no DMG but reducing the  physical armor of the target by <script type="math/tex" id="MathJax-Element-447">(2 + lvl)</script> for all enemies attacking that target. Does not work against magical armor like a mage aura or a stone skin. Does not naturally stack.</td>
+  <td>Attack doing no DMG but reducing the  physical armor of the target by <script type="math/tex" id="MathJax-Element-635">(2 + lvl)</script> for all enemies attacking that target. Does not work against magical armor like a mage aura or a stone skin. Does not naturally stack. Costs 3 AP</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Vanish</td>
-  <td>Hide by walking into the Shadow Realm and emerge hidden. You step through the Shadow Realm and emerge <script type="math/tex" id="MathJax-Element-448">(AGI + lvl) \; meters</script> in max lvl Initiative points. This means that the higher level you are, the longer you can stay hidden in the Shadow Realm. You emerge hidden. Cost 5 AP, cannot attack or do other things whist hidden. 0 INI but a cooldown of 1000 INI. You can take <script type="math/tex" id="MathJax-Element-449">(lvl)</script> targets, with a maximum of 3, with you.</td>
+  <td>Hide by walking into the Shadow Realm and emerge hidden. You step through the Shadow Realm and emerge <script type="math/tex" id="MathJax-Element-636">(AGI + lvl) \; meters</script> in max lvl Initiative points. This means that the higher level you are, the longer you can stay hidden in the Shadow Realm. You emerge hidden. Cost 5 AP, cannot attack or do other things whist hidden. 0 INI but a cooldown of 1000 INI. You can take <script type="math/tex" id="MathJax-Element-637">(lvl)</script> targets, with a maximum of 3, with you.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Interrupt</td>
-  <td>The action the target was about to do gets a <script type="math/tex" id="MathJax-Element-450">(10 + lvl) \; IP</script>, cost 3 AP.</td>
+  <td>The offensive action the target was about to do gets a <script type="math/tex" id="MathJax-Element-638">(10 + lvl) \; IP</script>, cost 3 AP. If the action was a spell the target must make an endurance check with  -10 to see if the spell is interrupted.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Recuperate</td>
-  <td>Drain AP from the target and give yourself a fraction of these AP with per 10 IP as a bonus. Each AP you spend leaches 1 AP from the target with a max <script type="math/tex" id="MathJax-Element-451">(2 * lvl + 2)</script>. Needs a successful hit and must be called in advance.</td>
+  <td>Drain AP from the target and give yourself a fraction of these AP with per 10 IP as a bonus. Each AP you spend leaches 1 AP from the target with a max <script type="math/tex" id="MathJax-Element-639">(2 * lvl + 2)</script>. Needs a successful hit and must be called in advance.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Directed Strike</td>
-  <td>Directed strike lowers the target’s PV with <script type="math/tex" id="MathJax-Element-452">(25 + lvl</script>)% on a successful hit. Costs 3AP.</td>
+  <td>Directed strike lowers the target’s PV with <script type="math/tex" id="MathJax-Element-640">(25 + lvl</script>)% on a successful hit. Costs 3AP.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Stronger from behind</td>
+  <td>When attacking from behind a Rogue gets (lvl + 1) bonus DMG and Skill.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Precision</td>
+  <td>A Rogue can ignore AGI / 10 fractions rounded down d4 of the target’s armor on each attack. Imagine having 11 AGI, on each attack you do you can now ignore 1d4 of the target’s armor.</td>
 </tr>
 </tbody></table>
 
 
-<p>A rogue can only do his specials, except for Vanish, when he holds smaller, maneuverable weapons. An effective rogue therefor always uses daggers.</p>
+<p>A rogue can only do his specials, except for Vanish, when he holds smaller, maneuverable weapons like daggers. An effective rogue therefor always uses daggers or fist weapons.</p>
 
 <p>At level 5 a Rogue can choose a specialisation; this is either Subtlety or Combat. </p>
 
@@ -1141,9 +1452,13 @@ Counter Spell: 5 AP, \; 10 IP
 
 <p>Cooldown of vanish is not 50 - (lvl * 2) and the duration of vanish is * 10. So a lvl 5 Subtlety Rogue can vanish for 50 initiative points into the Shadow Realm. During this time you may move unhindered, you can pass through smaller spaces than when in the normal world.</p>
 
+
+
 <h4 id="combat">Combat</h4>
 
-<p>Combat Rogues prefer a fight over sneaking around. Directed Strike costs no AP and can be used on every attack as long as the Rogue uses daggers or fist weapons. Directed Strike now reduces <script type="math/tex" id="MathJax-Element-472">(25 + lvl*2)\%</script> armor. So at level 5 you will reduce <script type="math/tex" id="MathJax-Element-473">35\%</script> armor from the target.</p>
+<p>Combat Rogues prefer a fight over sneaking around. Directed Strike costs no AP and can be used on every attack as long as the Rogue uses daggers or fist weapons. Directed Strike now reduces <script type="math/tex" id="MathJax-Element-29">(25 + lvl*2)\%</script> armor. So at level 5 you will reduce <script type="math/tex" id="MathJax-Element-30">35\%</script> armor from the target.</p>
+
+
 
 <h3 id="druids">Druids</h3>
 
@@ -1255,27 +1570,43 @@ Counter Spell: 5 AP, \; 10 IP
 
 <p>You can shape-shift into creatures, taking their specific traits. You will maintain your own DMG and armor but are able to fly when you shift into a bird or breath underwater when you turn into a fish. You choose one creature and every 2 levels you gain another shape-shift form.</p>
 
+<p>As with every druid, a Skinwalker can increase the party’s effectiveness.</p>
+
 <p>Skinwalkers can also adopt certain traits of the creatures into themselves so for example if they shapeshift into a dog they can shift the <em>smell</em> traint into themselves. Hawks have great sight, etc etc.</p>
 
+<p>Every creature you choose falls into the following types:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Type</th>
+  <th>Examples</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>tank</td>
+  <td>Bear</td>
+  <td>Tough skin, +2 Armor. When you shift into a bear the entire party gains a +1 armor</td>
+</tr>
+<tr>
+  <td>DPS</td>
+  <td>Wolf</td>
+  <td>+2 DMG, when you shift into a wolf the entire party gains a +1 DMG.</td>
+</tr>
+<tr>
+  <td>DPS</td>
+  <td>Cat</td>
+  <td>-2 initiative, when you shift into a cat the entire party gains a -1 to initiative. This also counts as a -2 (or -1 to party) initiative of the weapon.</td>
+</tr>
+</tbody></table>
 
 
-<h1 id="combat">Combat</h1>
+<p>Each creature has specials which you can learn as spells and use while not shifted. So for example, a wolf has keen sense of smell which results in a +5 to any smell you do. When you buy this spell (3 XP) you get a +5 to your smelling for a duration. (See magic for default duration’s).</p>
+
+<h1 id="combat-1">Combat</h1>
 
 <p>Now with a clear picture of all the small components of the game we can start a few combats and see how they go.</p>
-
-<p>Combat is fairly straightforward and uses opposing rolls with a d20 dice. When it is a player’s turn to do something he tells the GM what he does, rolls a d20, adds it to his relevant skill and gives that result to the GM. If a saving throw is allowed the GM rolls a d20, adds it to the relevant skill of the opponent and if that total is lower than the total the attack gave the player can roll for DMG.</p>
-
-<p>Rolling a 20 is a critical and rolling a 1 is fumble. With a critical you can do a few things, trigger the secondary effect of your weapon. Do max DMG, get your AP refunded or get a +5 to every skill against that opponent for 40 IP.</p>
-
-<p>Imagine a player who plays a Dwarven Warrior lvl 1 named Vincent. He has a two-handed sword and a skill level of 12. Vincent encounters a bandit fighting with a sword and shield. This bandit has a skill level of 9. Vincent has Armor 10 (banded mail) and the bandit has Armor 7 (4 leather, 3 medium shield). Both Vincent and Sue (yes, the bandit’s name is Sue) have 14 AP and 14 HP.</p>
-
-<p>Sue is first because his sword has an initiative of 12 and Vincent is at 21. </p>
-
-
-
-<div class="sequence-diagram"><svg height="961" version="1.1" width="819.8515625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M6,1 1,3.5 6,6" id="raphael-marker-open" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endopen77-obj30" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj36" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj45" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><marker id="raphael-marker-endopen77-obj48" markerHeight="7" markerWidth="7" orient="auto" refX="4" refY="3.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-open" transform="rotate(180 3.5 3.5) scale(1,1)" stroke-width="1.0000" fill="none" stroke="#000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endblock55-obj54" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="#000" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker></defs><rect x="10" y="20" width="46.6875" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="19.984375" y="30" width="26.6875" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="33.34375" y="38.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue</tspan></text><rect x="10" y="903.5" width="46.6875" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="19.984375" y="913.5" width="26.6875" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="33.34375" y="922.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue</tspan></text><path fill="none" stroke="#000000" d="M33.34375,57.5L33.34375,903.5" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="367.8359375" y="20" width="69.765625" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="377.828125" y="30" width="49.765625" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="402.71875" y="38.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent</tspan></text><rect x="367.8359375" y="903.5" width="69.765625" height="37.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="377.828125" y="913.5" width="49.765625" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="402.71875" y="922.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent</tspan></text><path fill="none" stroke="#000000" d="M402.71875,57.5L402.71875,903.5" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="175.5" y="73.75" width="85.03125" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="82.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack (8/17)</tspan></text><path fill="none" stroke="#000000" d="M33.34375,95C33.34375,95,371.4849809035659,95,400.7091009572432,95" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj30)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="53.34375" y="115" width="292.625" height="81.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="58.328125" y="120" width="282.625" height="71.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="199.65625" y="155.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-21.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">An attack is always denoted as (a/b) with </tspan><tspan dy="18" x="199.65625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">b the skill level and a the roll. </tspan><tspan dy="18" x="199.65625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">If for some reason there are modifiers you </tspan><tspan dy="18" x="199.65625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">denote them as (a/mod1/mod2/b)</tspan></text><rect x="152.984375" y="212.75" width="130.078125" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="221.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Defence (5/17 * 17)</tspan></text><path fill="none" stroke="#000000" d="M402.71875,234C402.71875,234,64.57751909643412,234,35.35339904275679,234" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj36)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="422.71875" y="254" width="285.140625" height="81.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="259" width="275.140625" height="71.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="565.2890625" y="294.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-21.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">A defensive action is always denoted as </tspan><tspan dy="18" x="565.2890625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">(a/b * attack) so in the case of vincent he </tspan><tspan dy="18" x="565.2890625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">rolled a 5 which resulted in a 17 and had </tspan><tspan dy="18" x="565.2890625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">to defend a 17.</tspan></text><rect x="53.34375" y="355.5" width="329.375" height="45.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="58.328125" y="360.5" width="319.375" height="35.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="378.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-3.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">A tie is always to the advantage of the defender.</tspan><tspan dy="18" x="218.03125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">If you cannot score a real hit it does not count.</tspan></text><rect x="171.328125" y="417.25" width="93.375" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="426" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Attack (12/24)</tspan></text><path fill="none" stroke="#000000" d="M402.71875,438.5C402.71875,438.5,64.57751909643412,438.5,35.35339904275679,438.5" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj45)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="148.8125" y="454.75" width="138.40625" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="463.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Defence (10/19 * 24)</tspan></text><path fill="none" stroke="#000000" d="M33.34375,476C33.34375,476,371.4849809035659,476,400.7091009572432,476" stroke-width="2" marker-end="url(#raphael-marker-endopen77-obj48)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="422.71875" y="496" width="267.375" height="45.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="501" width="257.375" height="35.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="556.40625" y="518.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-3.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent has scored a hit and may now </tspan><tspan dy="18" x="556.40625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">roll for DMG.</tspan></text><rect x="168.421875" y="557.75" width="99.1875" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="218.03125" y="566.5" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">DMG (12/9/21)</tspan></text><path fill="none" stroke="#000000" d="M402.71875,579C402.71875,579,82.37014233507216,579,38.33785080300322,579" stroke-width="2" marker-end="url(#raphael-marker-endblock55-obj54)" stroke-dasharray="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><rect x="422.71875" y="599" width="312.25" height="117.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="604" width="302.25" height="107.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="578.84375" y="657.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-39.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">His weapon does 2d6+2 resulting in 12 DMG </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"> he pours in 9 AP, he goes all out as they say.</tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Resulting in an extra 9 DMG. </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sue has 7 armor, get 21 DMG, </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">14 DMG  gets through and Sue leaves </tspan><tspan dy="18" x="578.84375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">the combat.</tspan></text><rect x="422.71875" y="736.5" width="248.828125" height="99.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="741.5" width="238.828125" height="89.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="547.1328125" y="786.25" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="-30.75" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Vincent had 14 AP. Het spend 3 </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">on a parry, 2 on an attack </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">and 8 on extra DMG. Vincent </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">now has 1 AP and can't even move </tspan><tspan dy="18" x="547.1328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">because of the fatigue.</tspan></text><rect x="422.71875" y="856" width="91.703125" height="27.5" rx="0" ry="0" fill="none" stroke="#000000" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><rect x="427.703125" y="861" width="81.703125" height="17.5" rx="0" ry="0" fill="#ffffff" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="468.5703125" y="869.75" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: 'Andale Mono', monospace; font-size: 16px;"><tspan dy="5.25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">But he wins!</tspan></text></svg></div>
-
-
 
 <h1 id="gear">Gear</h1>
 
@@ -1286,12 +1617,9 @@ Counter Spell: 5 AP, \; 10 IP
   Pure fantasy settings might increase the ranks of items as they see fit. Just keep in mind that ranks are there to be balanced and increasing the rank really changes the gameplay of the combats!</p>
 </blockquote>
 
-<h2 id="melee-weapons">Melee Weapons</h2>
 
-<p>Melee weapons are designed to have a certain DPI, DMG per Initiative. This is: <br>
-<script type="math/tex; mode=display" id="MathJax-Element-290">
-	\frac{avg \; DMG}{IM}
-</script></p>
+
+<h2 id="melee-weapons">Melee Weapons</h2>
 
 <p>Every weapon has a secondary effect which you can use when you roll a critical.</p>
 
@@ -1300,14 +1628,8 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <th>Rank</th>
   <th>Weapon</th>
-  <th>NOD</th>
-  <th>Sides</th>
-  <th>Const</th>
+  <th>DMG</th>
   <th>INI</th>
-  <th>Min</th>
-  <th>Max</th>
-  <th>Avg</th>
-  <th>DMG/INI</th>
   <th>Description</th>
 </tr>
 </thead>
@@ -1315,469 +1637,57 @@ Counter Spell: 5 AP, \; 10 IP
   <td>1</td>
   <td>Fists</td>
   <td>1</td>
-  <td>4</td>
-  <td>1</td>
   <td>5</td>
-  <td>2</td>
-  <td>5</td>
-  <td>3.5</td>
-  <td></td>
   <td>On crit, an enemy without a mail or higher helmet must roll a d20, 5 or lower is a knockout. Fist weapons, like metal knuckles do the dmg of daggers. Fists have a 3% crit chance.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Dagger</td>
-  <td>2</td>
-  <td>4</td>
-  <td>1</td>
+  <td>1d4</td>
   <td>8</td>
-  <td>3</td>
-  <td>9</td>
-  <td>6</td>
-  <td>0.75</td>
-  <td>Daggers are light, fast weapons. On crit you can ignore 25% of the target’s armor. Daggers have a default 10% crit chance.</td>
+  <td>Daggers are light, fast weapons. On crit you can ignore 2 of the target’s armor. Daggers have a 10% crit chance. (so, 19 and 20 are crit)</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Sword 1H</td>
-  <td>2</td>
-  <td>6</td>
-  <td>2</td>
-  <td>12</td>
-  <td>4</td>
-  <td>14</td>
-  <td>9</td>
-  <td>0.75</td>
-  <td>Swords are create versatile weapons, but mostly used to fight in unison or with each other. On crit swordsmen can choose to either get the AP for the attack refunded or have a +5 weapon skill against that target until the next recuperation.</td>
+  <td>1d6</td>
+  <td>10</td>
+  <td>Swords are great versatile weapons, but mostly used to fight in unison or with each other. On crit swordsmen can choose to either get the AP for the attack refunded or have a +5 weapon skill against that target until the next recuperation.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Mace 1H</td>
-  <td>2</td>
-  <td>8</td>
-  <td>0</td>
-  <td>12</td>
-  <td>2</td>
-  <td>16</td>
-  <td>9</td>
-  <td>0.75</td>
-  <td>Maces are great against the heavy armors. On crit you may choose to ignore armor for that hit or have +5% crit chance for duration of the fight against that target.</td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>Axe 1H</td>
-  <td>1</td>
-  <td>12</td>
-  <td>3</td>
-  <td>13</td>
-  <td>4</td>
-  <td>15</td>
-  <td>9.5</td>
-  <td>0.73</td>
-  <td>Axes are brutal weapons, slow but really powerful. On crit you can choose to do maximum DMG or drain 3AP from the target.</td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>Sword 2H</td>
-  <td>4</td>
-  <td>6</td>
-  <td>2</td>
-  <td>21</td>
-  <td>6</td>
-  <td>26</td>
-  <td>16</td>
-  <td>0.76</td>
-  <td></td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>Mace 2H</td>
-  <td>4</td>
-  <td>8</td>
-  <td>0</td>
-  <td>24</td>
-  <td>4</td>
-  <td>32</td>
-  <td>18</td>
-  <td>0.75</td>
-  <td></td>
-</tr>
-<tr>
-  <td>1</td>
-  <td>Axe 2H</td>
-  <td>2</td>
-  <td>12</td>
-  <td>3</td>
-  <td>21</td>
-  <td>5</td>
-  <td>27</td>
-  <td>16</td>
-  <td>0.76</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Dagger</td>
-  <td>3</td>
-  <td>4</td>
-  <td>1</td>
-  <td>8</td>
-  <td>4</td>
-  <td>13</td>
-  <td>8.5</td>
-  <td>1.06</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Sword 1H</td>
-  <td>2</td>
-  <td>6</td>
-  <td>3</td>
-  <td>10</td>
-  <td>5</td>
-  <td>15</td>
-  <td>10</td>
-  <td>1</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Mace 1H</td>
-  <td>2</td>
-  <td>8</td>
-  <td>3</td>
-  <td>12</td>
-  <td>5</td>
-  <td>19</td>
-  <td>12</td>
-  <td>1</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Axe 1H</td>
-  <td>1</td>
-  <td>12</td>
-  <td>4</td>
-  <td>10</td>
-  <td>5</td>
-  <td>16</td>
-  <td>10.5</td>
-  <td>1.05</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Sword 2H</td>
-  <td>5</td>
-  <td>6</td>
-  <td>4</td>
-  <td>21</td>
-  <td>9</td>
-  <td>34</td>
-  <td>21.5</td>
-  <td>1.02</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Mace 2H</td>
-  <td>5</td>
-  <td>8</td>
-  <td>2</td>
-  <td>23</td>
-  <td>7</td>
-  <td>42</td>
-  <td>24.5</td>
-  <td>1.07</td>
-  <td></td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Axe 2H</td>
-  <td>2</td>
-  <td>12</td>
-  <td>6</td>
-  <td>18</td>
-  <td>8</td>
-  <td>30</td>
-  <td>19</td>
-  <td>1.06</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Dagger</td>
-  <td>3</td>
-  <td>4</td>
-  <td>2</td>
-  <td>8</td>
-  <td>5</td>
-  <td>14</td>
-  <td>9.5</td>
-  <td>1.19</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Sword 1H</td>
-  <td>3</td>
-  <td>6</td>
-  <td>4</td>
-  <td>12</td>
-  <td>7</td>
-  <td>22</td>
-  <td>14.5</td>
-  <td>1.21</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Mace 1H</td>
-  <td>3</td>
-  <td>8</td>
-  <td>1</td>
-  <td>12</td>
-  <td>4</td>
-  <td>25</td>
-  <td>14.5</td>
-  <td>1.21</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Axe 1H</td>
-  <td>2</td>
-  <td>12</td>
-  <td>3</td>
-  <td>13</td>
-  <td>5</td>
-  <td>27</td>
-  <td>16</td>
-  <td>1.23</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Sword 2H</td>
-  <td>6</td>
-  <td>6</td>
-  <td>4</td>
-  <td>21</td>
-  <td>10</td>
-  <td>40</td>
-  <td>25</td>
-  <td>1.19</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Mace 2H</td>
-  <td>6</td>
-  <td>8</td>
-  <td>2</td>
-  <td>24</td>
-  <td>8</td>
-  <td>50</td>
-  <td>29</td>
-  <td>1.21</td>
-  <td></td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Axe 2H</td>
-  <td>3</td>
-  <td>12</td>
-  <td>6</td>
-  <td>21</td>
-  <td>9</td>
-  <td>42</td>
-  <td>25.5</td>
-  <td>1.21</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Dagger</td>
-  <td>4</td>
-  <td>4</td>
-  <td>2</td>
-  <td>8</td>
-  <td>6</td>
-  <td>18</td>
-  <td>12</td>
-  <td>1.5</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Sword 1H</td>
-  <td>4</td>
-  <td>6</td>
-  <td>4</td>
-  <td>12</td>
-  <td>8</td>
-  <td>28</td>
-  <td>18</td>
-  <td>1.5</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Mace 1H</td>
-  <td>4</td>
-  <td>8</td>
-  <td>0</td>
-  <td>12</td>
-  <td>4</td>
-  <td>32</td>
-  <td>18</td>
-  <td>1.5</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Axe 1H</td>
-  <td>3</td>
-  <td>12</td>
-  <td>3</td>
-  <td>15</td>
-  <td>6</td>
-  <td>39</td>
-  <td>22.5</td>
-  <td>1.5</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Sword 2H</td>
-  <td>7</td>
-  <td>6</td>
-  <td>5</td>
-  <td>19</td>
-  <td>12</td>
-  <td>47</td>
-  <td>29.5</td>
-  <td>1.55</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Mace 2H</td>
-  <td>7</td>
-  <td>8</td>
-  <td>3</td>
-  <td>22</td>
-  <td>10</td>
-  <td>59</td>
-  <td>34.5</td>
-  <td>1.57</td>
-  <td></td>
-</tr>
-<tr>
-  <td>4</td>
-  <td>Axe 2H</td>
-  <td>4</td>
-  <td>12</td>
-  <td>6</td>
-  <td>21</td>
-  <td>10</td>
-  <td>54</td>
-  <td>32</td>
-  <td>1.52</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Dagger</td>
-  <td>5</td>
-  <td>4</td>
-  <td>4</td>
-  <td>8</td>
-  <td>9</td>
-  <td>24</td>
-  <td>16.5</td>
-  <td>2.06</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Sword 1H</td>
-  <td>5</td>
-  <td>6</td>
-  <td>7</td>
-  <td>12</td>
-  <td>12</td>
-  <td>37</td>
-  <td>24.5</td>
-  <td>2.04</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Mace 1H</td>
-  <td>5</td>
-  <td>8</td>
-  <td>2</td>
-  <td>12</td>
-  <td>7</td>
-  <td>42</td>
-  <td>24.5</td>
-  <td>2.04</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Axe 1H</td>
-  <td>4</td>
-  <td>12</td>
-  <td>0</td>
-  <td>13</td>
-  <td>4</td>
-  <td>48</td>
-  <td>26</td>
-  <td>2</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Sword_2H</td>
-  <td>8</td>
-  <td>6</td>
-  <td>4</td>
-  <td>16</td>
-  <td>12</td>
-  <td>52</td>
-  <td>32</td>
-  <td>2</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Mace 2H</td>
-  <td>8</td>
-  <td>8</td>
-  <td>2</td>
-  <td>19</td>
-  <td>10</td>
-  <td>66</td>
-  <td>38</td>
-  <td>2</td>
-  <td></td>
-</tr>
-<tr>
-  <td>5</td>
-  <td>Axe 2H</td>
-  <td>5</td>
-  <td>12</td>
-  <td>6</td>
-  <td>19</td>
+  <td>1d8</td>
   <td>11</td>
-  <td>66</td>
-  <td>38.5</td>
-  <td>2.03</td>
-  <td></td>
+  <td>Maces are great against the heavy armors. On crit you can reduce the target’s armor with 15% for the duration of the combat.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Axe 1H</td>
+  <td>1d8</td>
+  <td>11</td>
+  <td>Axes are brutal weapons, slow but really powerful. On crit you can choose to do maximum DMG or drain 1AP from the target.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Sword 2H</td>
+  <td>1d10</td>
+  <td>14</td>
+  <td>On crit swordsmen can choose to either get the AP for the attack refunded or have a +5 weapon skill against that target until the next recuperation.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Mace 2H</td>
+  <td>1d12</td>
+  <td>16</td>
+  <td>On crit you can reduce the target’s armor with 20% for the duration of the combat.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Axe 2H</td>
+  <td>1d12</td>
+  <td>16</td>
+  <td>On each successful attack the attacker pushes the opponent’s next attack and his own 1d4 initiative later. You can use AP to increase this to the max die roll.</td>
 </tr>
 </tbody></table>
 
@@ -1803,23 +1713,23 @@ Counter Spell: 5 AP, \; 10 IP
 </thead>
 <tbody><tr>
   <td>Buckler</td>
-  <td>A small shield which can be worn on a weapon hand granting +2 armor, bucklers can not be used with daggers, short swords or two handed weapons.</td>
+  <td>A small shield which can be worn on a weapon hand granting +1 armor, bucklers can not be used with daggers, short swords or two handed weapons.</td>
 </tr>
 <tr>
   <td>Small</td>
-  <td>A small shield which give a +3 armor</td>
+  <td>A small shield which give a +1 armor</td>
 </tr>
 <tr>
   <td>Medium</td>
-  <td>A medium shield which give a +4 armor</td>
+  <td>A medium shield which give a +1 armor</td>
 </tr>
 <tr>
   <td>Large</td>
-  <td>A large shield which give a +6 armor</td>
+  <td>A large shield which give a +2 armor</td>
 </tr>
 <tr>
   <td>Bodyshield</td>
-  <td>A very large shield which give a +8 armor</td>
+  <td>A very large shield which give a +3 armor</td>
 </tr>
 </tbody></table>
 
@@ -1843,100 +1753,46 @@ Counter Spell: 5 AP, \; 10 IP
 </tr>
 <tr>
   <td>Leather</td>
-  <td>+3 armor</td>
+  <td>+1 to +3 armor</td>
 </tr>
 <tr>
   <td>Brigandine</td>
-  <td>+6 armor</td>
+  <td>+1 to +4 armor</td>
 </tr>
 <tr>
   <td>Coat of plates</td>
-  <td>+9 armor</td>
+  <td>+3 to +5 armor</td>
 </tr>
 <tr>
   <td>Splint</td>
-  <td>+6 armor</td>
+  <td>+1 to +4 armor</td>
 </tr>
 <tr>
   <td>Plate</td>
-  <td>+11 armor</td>
+  <td>+4 to +7 armor</td>
 </tr>
 </tbody></table>
 
 
-<p>Just like with weapons the armors can change with rank. Your PHY is still the max PV you can carry, but parts of the armor might be magical. I would advice something like:</p>
-
-<table>
-<thead>
-<tr>
-  <th>Rank</th>
-  <th>Cloth</th>
-  <th>Leather</th>
-  <th>Brigandine</th>
-  <th>Coat of Plates</th>
-  <th>Splint</th>
-  <th>Plate</th>
-</tr>
-</thead>
-<tbody><tr>
-  <td><strong>1</strong></td>
-  <td>1</td>
-  <td>3</td>
-  <td>6</td>
-  <td>9</td>
-  <td>6</td>
-  <td>11</td>
-</tr>
-<tr>
-  <td><strong>2</strong></td>
-  <td>3</td>
-  <td>6</td>
-  <td>10</td>
-  <td>14</td>
-  <td>10</td>
-  <td>17</td>
-</tr>
-<tr>
-  <td><strong>3</strong></td>
-  <td>5</td>
-  <td>9</td>
-  <td>14</td>
-  <td>19</td>
-  <td>14</td>
-  <td>23</td>
-</tr>
-<tr>
-  <td><strong>4</strong></td>
-  <td>7</td>
-  <td>12</td>
-  <td>18</td>
-  <td>23</td>
-  <td>18</td>
-  <td>29</td>
-</tr>
-<tr>
-  <td><strong>5</strong></td>
-  <td>9</td>
-  <td>15</td>
-  <td>22</td>
-  <td>27</td>
-  <td>22</td>
-  <td>35</td>
-</tr>
-</tbody></table>
-
+<p>Just like with weapons the armors can change with rank. Your PHY / 2 (fractions rounded down) is still the max PV you can carry, but parts of the armor might be magical.</p>
 
 <h3 id="leather">Leather:</h3>
 
 <p><img src="https://s-media-cache-ak0.pinimg.com/736x/59/e2/9c/59e29cfc95608acf0aa7d1d85afc14f7.jpg" alt="" title=""></p>
 
+
+
 <h3 id="brigandine">Brigandine:</h3>
 
 <p><img src="http://www.loricamos.vizz.pl/obrazy/sekcje/sekcja_97.jpg" alt="" title=""></p>
 
+
+
 <h3 id="cloat-of-plates">Cloat of Plates</h3>
 
 <p><img src="http://ep.yimg.com/ay/yhst-55945181203785/leather-coat-of-plates-11.jpg" alt="" title=""></p>
+
+
 
 <h3 id="splint">Splint</h3>
 
