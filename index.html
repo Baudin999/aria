@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aria - P&P RPG</title>
 <link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body><div class="container"><p>Table of contents</p>
 
@@ -71,13 +71,15 @@
 <li><a href="#combat">Combat</a></li>
 </ul>
 </li>
-<li><a href="#druids">Druids</a></li>
-</ul>
-</li>
+<li><a href="#druids">Druids</a><ul>
 <li><a href="#dreamer">Dreamer</a></li>
 <li><a href="#hunter">Hunter</a></li>
 <li><a href="#shaman">Shaman</a></li>
 <li><a href="#skinwalker">Skinwalker</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#combat-1">Combat</a></li>
@@ -290,9 +292,9 @@
 
 <p>A combat starts with everyone throwing a d20 to determine where in the timeline they start. Melee weapons may attack at that point and after their attack they will suffer a <em>cool down period</em> depending on the speed of the weapon. Casters have a cast time, this is the time it takes for the spell to actually fire. Basically there are three types of IP costing things you can do. There are things from which you need to recuperation, like attacking with a dagger. There are things which need IP to prepare, like casting a Fireball and lastly there are continuous things like running. </p>
 
-<p>Continuous actions will cost a fixed amount of AP. For example: running from place <script type="math/tex" id="MathJax-Element-1">A \rightarrow B</script> will cost you, twenty AP. While you are running you do not recuperate AP every thirty IP and at the end you will have to pay 20 AP. Everything harder than walking will “block AP regeneration” except for combat so running, climbing, working in a smithy etc will all cost a set amount of AP. The activities section of the manual will list activities and their respective AP costs.</p>
+<p>Continuous actions will cost a fixed amount of AP. For example: running from place <script type="math/tex" id="MathJax-Element-3">A \rightarrow B</script> will cost you, twenty AP. While you are running you do not recuperate AP every thirty IP and at the end you will have to pay 20 AP. Everything harder than walking will “block AP regeneration” except for combat so running, climbing, working in a smithy etc will all cost a set amount of AP. The activities section of the manual will list activities and their respective AP costs.</p>
 
-<p>As a rule of thumb you can think of 100m costing 1AP while walking. Jogging is <script type="math/tex" id="MathJax-Element-2">AP * 2</script>, Running <script type="math/tex" id="MathJax-Element-3">AP * 4</script>, Sprinting <script type="math/tex" id="MathJax-Element-4">AP * 8</script>.</p>
+<p>As a rule of thumb you can think of 100m costing 1AP while walking. Jogging is <script type="math/tex" id="MathJax-Element-4">AP * 2</script>, Running <script type="math/tex" id="MathJax-Element-5">AP * 4</script>, Sprinting <script type="math/tex" id="MathJax-Element-6">AP * 8</script>.</p>
 
 
 
@@ -308,27 +310,19 @@
 
 <h2 id="magic">Magic</h2>
 
-<p>Magic is the ability to change reality with your mental power and some arcane knowledge. Magic in Aria is very straight forward, when you choose a magical profession you get a magic skill and a lore skill. Every 5 XP you put into the magic or lore skill will grant you one spell point which you can spend on spells with every rank has to be 10 lore level higher. You can either upgrade a spell or buy a new one if your lore is equal or higher than the lore needed to buy the spell.</p>
+<p>Magic is the ability to change reality with your mental power and some arcane knowledge. Magic in Aria is very straight forward, when you choose a magical profession you get a magic skill. You roll, just like any other skill, with your level +1 number of d10 dice. So at level four you roll with 5d10. </p>
 
-<p>For example:</p>
+<p>This is the amount of magical DMG they can resist. Just like with every melee skill you always roll an opposing roll to see if you’ve countered the effects of the spell. You can only do this if you are the target of the spell. If you want to actively dispel the spell you can do so as described in the section on dispelling magic.</p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-5">
-Fireball: 20 INI,  \; 2d6 + 2 \; DMG
-</script></p>
-
-<p>You can cast this Fireball which takes 20 IP to cast and costs 3 AP, every action costs 3 AP. Your magic skill is 12. You roll 1d20 + 12 against the dodge of the target. </p>
+<p>Caster gain an automatic protection against magic of Intuition / 2.</p>
 
 <p>Magic gives a bit more flexibility within a combat. You can decide to <em>double your cast</em> effectively taking twice as long and costing twice the amount of AP, giving your spell a dmg modifier of <em>times 2</em>. So in the previous fireball example you can say:</p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-6">
+<p><script type="math/tex; mode=display" id="MathJax-Element-8">
 Fireball: 6 AP, \; 40 IP,  \; (2d6 + 2) * 2 \; DMG
 </script></p>
 
-<p>Tripling your cast time does <script type="math/tex" id="MathJax-Element-7">(2d6 + 2) * 2.5 \; DMG</script>, Quadrupling: <script type="math/tex" id="MathJax-Element-8">(2d6 + 2) * 2.75 \; DMG</script>, Quintupling: <script type="math/tex" id="MathJax-Element-9">(2d6 + 2) * 3 \; DMG</script> and that is as far as you are allowed to go. While casting you do not recuperate.</p>
+<p>Tripling your cast time does <script type="math/tex" id="MathJax-Element-9">(2d6 + 2) * 2.5 \; DMG</script>, Quadrupling: <script type="math/tex" id="MathJax-Element-10">(2d6 + 2) * 2.75 \; DMG</script>, Quintupling: <script type="math/tex" id="MathJax-Element-11">(2d6 + 2) * 3 \; DMG</script> and that is as far as you are allowed to go. While casting you do not recuperate.</p>
 
 <p>Every spell can be grouped in one of three types: Offensive, Defensive and Utility. Every Defensive spell, unless stated otherwise, lasts 60 IP. Each extra rank to the spell can increase the duration with +10 IP or the number of targets +1.</p>
 
@@ -361,19 +355,15 @@ Fireball: 6 AP, \; 40 IP,  \; (2d6 + 2) * 2 \; DMG
 <p>Defensive spells counter certain elements of the game. For example a shield increases armor. Wards are static spells which protect an area against certain other spells. For example, a caster can erect a ward against Fire reducing Fire DMG taking within the area.</p>
 
 <p>Unless stated otherwise a defensive spell works like: <br>
-Every rank grants a +1 to the effect of the spell. The duration of the spell is increased by 5 Initiative and you can cast the spell on 1 other target for +1AP. So at rank 1 you can cast Stone Skin on 2 targets for (3 + 1)AP.</p>
+Every rank grants a +1 to the effect of the spell. The duration of the spell is increased by 5 Initiative and you can cast the spell on 1 other target for +1 AP. So at rank 1 you can cast Stone Skin on 2 targets for (3 + 1)AP.</p>
 
 <p>Every caster gets the following armor spell:</p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-10">
+<p><script type="math/tex; mode=display" id="MathJax-Element-39">
 Armor: 3AP, \; 10 IP, Grants \; your \; PHY \; as \; armor  \; from \; PHY \; attacks.
 </script></p>
 
-<p>Every caster automatically gets <script type="math/tex" id="MathJax-Element-11">INU</script> as a resistance to magic. You can see this as pure magical resistance. For instance, a fireball does <script type="math/tex" id="MathJax-Element-12">20 \; DMG</script>, your <script type="math/tex" id="MathJax-Element-13">INU</script> is <script type="math/tex" id="MathJax-Element-14">7</script>, you lose <script type="math/tex" id="MathJax-Element-15">13 \; HP</script>. </p>
-
-
+<p>Every caster automatically gets <script type="math/tex" id="MathJax-Element-40">INU / 2</script> as a resistance to magic. You can see this as pure magical resistance. For instance, a fireball does <script type="math/tex" id="MathJax-Element-41">20 \; DMG</script>, your <script type="math/tex" id="MathJax-Element-42">INU</script> is <script type="math/tex" id="MathJax-Element-43">7</script>, you lose <script type="math/tex" id="MathJax-Element-44">17 \; HP</script>. </p>
 
 <h3 id="utility">Utility</h3>
 
@@ -387,7 +377,7 @@ Armor: 3AP, \; 10 IP, Grants \; your \; PHY \; as \; armor  \; from \; PHY \; at
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-16">
+<p><script type="math/tex; mode=display" id="MathJax-Element-18">
 Counter Spell: 5 AP, \; 10 IP
 </script></p>
 
@@ -414,7 +404,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>Crit chance</td>
   <td align="center">-</td>
-  <td>Increase your crit chance with 2,5% per rank; fractions rounded down.</td>
+  <td>When you roll a 20 or higher with your world dice you get a +5% chance to crit. Every rank decreases this roll with one this. (So, rank 1, you roll 20, now rolling a 1 or 2 is a crit. Rank 4, rolling 17, 18, 19, 20 increases your chance to crit with one.)</td>
 </tr>
 <tr>
   <td>Crit damage</td>
@@ -459,16 +449,44 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>Splash</td>
   <td align="center">-</td>
-  <td>5% chance to hit an additional target for 20% of your dmg.</td>
+  <td>On crit you hit an additional target for 20% of your dmg.</td>
 </tr>
 <tr>
   <td>Roll Modifier</td>
   <td align="center">-</td>
   <td>Per rank your XP in a skill counts as rank * XP</td>
 </tr>
+<tr>
+  <td>Break Armor</td>
+  <td align="center">-</td>
+  <td>When you crit your offensive action and hit the opponent you reduce the armor of the opponent by 1. +1 every rank.</td>
+</tr>
+<tr>
+  <td>Unbreakable</td>
+  <td align="center">-</td>
+  <td>Every time you critically defend you get +1 armor.</td>
+</tr>
+<tr>
+  <td>Merchant</td>
+  <td align="center">-</td>
+  <td>+3 per rank on merchant related rolls.</td>
+</tr>
+<tr>
+  <td>Artist</td>
+  <td align="center">-</td>
+  <td>+3 per rank on artistic rolls</td>
+</tr>
+<tr>
+  <td>Scholar</td>
+  <td align="center">-</td>
+  <td>+3 per rank on scholarly rolls.</td>
+</tr>
+<tr>
+  <td>Anticipate</td>
+  <td align="center">-</td>
+  <td>Perception rolls are allowed to see if you are surprised at a -20 skill; +1 per rank.</td>
+</tr>
 </tbody></table>
-
-
 
 
 <h3 id="directed-strike">Directed Strike</h3>
@@ -802,7 +820,7 @@ Counter Spell: 5 AP, \; 10 IP
 </thead>
 <tbody><tr>
   <td>Barbarian</td>
-  <td>-1 AP cost for attacks, +1 DMG</td>
+  <td>+1 DMG, +5% crit chance</td>
   <td>Barbarians have had no formal training but their commitment is obvious to everyone.</td>
 </tr>
 <tr>
@@ -831,9 +849,9 @@ Counter Spell: 5 AP, \; 10 IP
 </thead>
 <tbody><tr>
   <td align="center">1</td>
-  <td>Rage I: Every 10 HP you loose grants +1 DMG per attack</td>
+  <td>Rage I: Every 5 DMG you take grants +1 DMG per attack</td>
   <td>Last Stand: Every 5 HP you loose grants +1 skill</td>
-  <td>Ice Cold: Every 10 HP you loose grants +1 Armor.</td>
+  <td>Ice Cold: Every 5 HP you loose grants +1 Armor.</td>
 </tr>
 <tr>
   <td align="center">2</td>
@@ -902,8 +920,6 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Block this I: Every time you successfully block an attack you gain +3 AP</td>
 </tr>
 </tbody></table>
-
-
 
 
 <h4 id="skills-1">Skills</h4>
@@ -1029,27 +1045,27 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>10</td>
   <td>Jet of Flame</td>
-  <td>DMG: <script type="math/tex" id="MathJax-Element-17">1d4</script> DMG per 5 IP. Channeled spell costs 3 AP per 30 IP. Can’t recuperate whilst channeling.</td>
+  <td>DMG: <script type="math/tex" id="MathJax-Element-19">1d4</script> DMG per 5 IP. Channeled spell costs 3 AP per 30 IP. Can’t recuperate whilst channeling.</td>
 </tr>
 <tr>
   <td>20</td>
   <td>Flaming Sphere</td>
-  <td>Roll a Sphere in a direction. <script type="math/tex" id="MathJax-Element-18">2d12 + 5</script> DMG. Moves 1 m per 10 IP does not take a Dodge roll to dodge, does not explode on impact.</td>
+  <td>Roll a Sphere in a direction. <script type="math/tex" id="MathJax-Element-20">2d12 + 5</script> DMG. Moves 1 m per 10 IP does not take a Dodge roll to dodge, does not explode on impact.</td>
 </tr>
 <tr>
   <td>30</td>
   <td>Flaming Aura</td>
-  <td>Whenever someone attacks you they receive <script type="math/tex" id="MathJax-Element-19">1d4</script> DMG does not matter if they score a hit or if you parry, armor does not count. DMG does not count when you dodge.</td>
+  <td>Whenever someone attacks you they receive <script type="math/tex" id="MathJax-Element-21">1d4</script> DMG does not matter if they score a hit or if you parry, armor does not count. DMG does not count when you dodge.</td>
 </tr>
 <tr>
   <td>30</td>
   <td>Flaming Weapon</td>
-  <td>Weapon does and extra <script type="math/tex" id="MathJax-Element-20">1d4</script> Fire DMG, armor does not count.</td>
+  <td>Weapon does and extra <script type="math/tex" id="MathJax-Element-22">1d4</script> Fire DMG, armor does not count.</td>
 </tr>
 <tr>
   <td>40</td>
   <td>Flame Strike</td>
-  <td><script type="math/tex" id="MathJax-Element-21">INU \; m^{2}</script> gets 1d6 + 1 DMG, armor does not count. Horses flee, cattle runs and normal soldiers break up. This spell does not outright kill, but leaves a lasting effect on the targets.</td>
+  <td><script type="math/tex" id="MathJax-Element-23">INU \; m^{2}</script> gets 1d6 + 1 DMG, armor does not count. Horses flee, cattle runs and normal soldiers break up. This spell does not outright kill, but leaves a lasting effect on the targets.</td>
 </tr>
 <tr>
   <td>50</td>
@@ -1111,9 +1127,17 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Dig</td>
   <td>You can dig tunnels and Caves. Your dig speed is ( INU / 10 )m + 1m per recuperation.</td>
 </tr>
+<tr>
+  <td>1</td>
+  <td>Crack Armor</td>
+  <td>You can reduce the target’s armor by 2, 40 Initiative Cooldown. Every even rank reduced the CD by 5 Initiative and every odd rank increases the reduction by 1.</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Sure footedness</td>
+  <td>You can walk mountain paths without fear of falling. Every level increases this sure footedness to more extreme situations. At rank 5 you can climb a natural sheer cliff. At rank 10 you can scale any mostly stone wall.</td>
+</tr>
 </tbody></table>
-
-
 
 
 <h4 id="water-spells">Water spells</h4>
@@ -1333,7 +1357,7 @@ Counter Spell: 5 AP, \; 10 IP
   <td>1</td>
   <td>Heal for 5 HP, cast 50 IP, must touch the target</td>
   <td>Bless: Gain +2 armor, replaces the +1 armor from the base spells of the paladin.</td>
-  <td>+4 DMG against undead and demons. +2 DMG against other opponents. Duration <script type="math/tex" id="MathJax-Element-22">60 + (10 * lvl)</script> Initiative.</td>
+  <td>+4 DMG against undead and demons. +2 DMG against other opponents. Duration <script type="math/tex" id="MathJax-Element-24">60 + (10 * lvl)</script> Initiative.</td>
 </tr>
 <tr>
   <td>2</td>
@@ -1415,27 +1439,27 @@ Counter Spell: 5 AP, \; 10 IP
 <tbody><tr>
   <td>1</td>
   <td>Expose Armor</td>
-  <td>Attack doing no DMG but reducing the  physical armor of the target by <script type="math/tex" id="MathJax-Element-23">(2 + lvl)</script> for all enemies attacking that target. Does not work against magical armor like a mage aura or a stone skin. Does not naturally stack. Costs 3 AP</td>
+  <td>Attack doing no DMG but reducing the  physical armor of the target by <script type="math/tex" id="MathJax-Element-25">(2 + lvl)</script> for all enemies attacking that target. Does not work against magical armor like a mage aura or a stone skin. Does not naturally stack. Costs 3 AP</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Vanish</td>
-  <td>Hide by walking into the Shadow Realm and emerge hidden. You step through the Shadow Realm and emerge <script type="math/tex" id="MathJax-Element-24">(AGI + lvl) \; meters</script> in max lvl Initiative points. This means that the higher level you are, the longer you can stay hidden in the Shadow Realm. You emerge hidden. Cost 5 AP, cannot attack or do other things whist hidden. 0 INI but a cooldown of 1000 INI. You can take <script type="math/tex" id="MathJax-Element-25">(lvl)</script> targets, with a maximum of 3, with you.</td>
+  <td>Hide by walking into the Shadow Realm and emerge hidden. You step through the Shadow Realm and emerge <script type="math/tex" id="MathJax-Element-26">(AGI + lvl) \; meters</script> in max lvl Initiative points. This means that the higher level you are, the longer you can stay hidden in the Shadow Realm. You emerge hidden. Cost 5 AP, cannot attack or do other things whist hidden. 0 INI but a cooldown of 1000 INI. You can take <script type="math/tex" id="MathJax-Element-27">(lvl)</script> targets, with a maximum of 3, with you.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Interrupt</td>
-  <td>The offensive action the target was about to do gets a <script type="math/tex" id="MathJax-Element-26">(10 + lvl) \; IP</script>, cost 3 AP. If the action was a spell the target must make an endurance check with  -10 to see if the spell is interrupted.</td>
+  <td>The offensive action the target was about to do gets a <script type="math/tex" id="MathJax-Element-28">(10 + lvl) \; IP</script>, cost 3 AP. If the action was a spell the target must make an endurance check with  -10 to see if the spell is interrupted.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Recuperate</td>
-  <td>Drain AP from the target and give yourself a fraction of these AP with per 10 IP as a bonus. Each AP you spend leaches 1 AP from the target with a max <script type="math/tex" id="MathJax-Element-27">(2 * lvl + 2)</script>. Needs a successful hit and must be called in advance.</td>
+  <td>Drain AP from the target and give yourself a fraction of these AP with per 10 IP as a bonus. Each AP you spend leaches 1 AP from the target with a max <script type="math/tex" id="MathJax-Element-29">(2 * lvl + 2)</script>. Needs a successful hit and must be called in advance.</td>
 </tr>
 <tr>
   <td>1</td>
   <td>Directed Strike</td>
-  <td>Directed strike lowers the target’s PV with <script type="math/tex" id="MathJax-Element-28">(25 + lvl</script>)% on a successful hit. Costs 3AP.</td>
+  <td>Directed strike lowers the target’s PV with <script type="math/tex" id="MathJax-Element-30">(25 + lvl</script>)% on a successful hit. Costs 3AP.</td>
 </tr>
 <tr>
   <td>1</td>
@@ -1464,7 +1488,7 @@ Counter Spell: 5 AP, \; 10 IP
 
 <h4 id="combat">Combat</h4>
 
-<p>Combat Rogues prefer a fight over sneaking around. Directed Strike costs no AP and can be used on every attack as long as the Rogue uses daggers or fist weapons. Directed Strike now reduces <script type="math/tex" id="MathJax-Element-29">(25 + lvl*2)\%</script> armor. So at level 5 you will reduce <script type="math/tex" id="MathJax-Element-30">35\%</script> armor from the target.</p>
+<p>Combat Rogues prefer a fight over sneaking around. Directed Strike costs no AP and can be used on every attack as long as the Rogue uses daggers or fist weapons. Directed Strike now reduces <script type="math/tex" id="MathJax-Element-31">(25 + lvl*2)\%</script> armor. So at level 5 you will reduce <script type="math/tex" id="MathJax-Element-32">35\%</script> armor from the target.</p>
 
 
 
@@ -1500,7 +1524,7 @@ Counter Spell: 5 AP, \; 10 IP
 <tr>
   <td>5</td>
   <td>Sleep</td>
-  <td>Can put a target to sleep</td>
+  <td>Can put a target to sleep, 1d6 DMG. You roll against the magical armor of the target. If they fail the “DMG” is the number of minutes in magical sleep. The “DMG” is the number of hours in normal sleep.</td>
 </tr>
 <tr>
   <td>10</td>
@@ -1564,9 +1588,13 @@ Counter Spell: 5 AP, \; 10 IP
 </tbody></table>
 
 
+
+
 <h4 id="shaman">Shaman</h4>
 
 <p>A Shaman gets a combination of the spells of a mage. The following spells will be automatically assigned to you when you level.</p>
+
+
 
 <h4 id="skinwalker">Skinwalker</h4>
 
@@ -1628,6 +1656,8 @@ Counter Spell: 5 AP, \; 10 IP
   <td>Gain 10% chance of an extra attack.</td>
 </tr>
 </tbody></table>
+
+
 
 
 <h1 id="combat-1">Combat</h1>
